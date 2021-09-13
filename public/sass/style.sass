@@ -1,5 +1,48 @@
 // Sass
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap')
+
+$primary-color: #215aa9
+
+.flex
+	display: flex
 
 body
-	padding: 50px
-	font-family: 'Poppins', sans-serif
+	font-family: 'Lato', sans-serif
+
+header
+	background-color: $primary-color
+	nav a
+		display: inline-block
+		padding: 35px 15px 30px
+		color: white
+		&.btn-primary
+			padding: 10px 25px
+			border: 1px solid white
+			border-radius: 5px
+
+.sec
+	padding: 40px 0
+	&--hero
+		display: flex
+		padding: 0
+		background:
+			image: url('../images/hero-bg.jpg')
+			position: center
+			size: cover
+			repeat: no-repeat
+		color: white
+		.sec-hero-bottom
+			background-color: rgba(12,33,62,0.75)
+			width: 100%
+			padding: 35px
+		@media (min-width: 40rem)
+			height: 600px
+	.title
+		color: $primary-color
+
+footer
+	background-color: #4a4a4a
+	color: white
+	padding: 40px 0
+	a
+		color: white
