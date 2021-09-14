@@ -5,6 +5,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  color: #666;
 }
 
 header {
@@ -38,10 +39,40 @@ header nav a.btn-primary {
   width: 100%;
   padding: 35px;
 }
+.sec--hero .sec-hero-bottom .heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+}
+.sec--hero .sec-hero-bottom .subheading {
+  font-size: 32px;
+}
 @media (min-width: 40rem) {
   .sec--hero {
     height: 600px;
   }
+}
+.sec--features article {
+  display: inline-flex;
+  justify-content: center;
+  max-width: 33%;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.sec--features article .title {
+  color: #538ddd;
+  font-size: 24px;
+}
+.sec--features article .paragraph {
+  max-width: 290px;
+}
+.sec--security .grid-container {
+  background-image: url("../images/separator.png");
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 80px 0;
 }
 .sec .title {
   color: #215aa9;
