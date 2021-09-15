@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 body {
@@ -20,10 +21,15 @@ header nav a.btn-primary {
   padding: 10px 25px;
   border: 1px solid white;
   border-radius: 5px;
+  margin: 20px 0;
+}
+header nav a.btn-primary:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 .sec {
-  padding: 40px 0;
+  padding: 80px 0;
 }
 .sec--hero {
   display: flex;
@@ -37,7 +43,7 @@ header nav a.btn-primary {
 .sec--hero .sec-hero-bottom {
   background-color: rgba(12, 33, 62, 0.75);
   width: 100%;
-  padding: 35px;
+  padding: 80px;
 }
 .sec--hero .sec-hero-bottom .heading {
   font-weight: 700;
@@ -62,9 +68,10 @@ header nav a.btn-primary {
 }
 .sec--features article .title {
   color: #538ddd;
-  font-size: 24px;
+  font-size: 22px;
 }
 .sec--features article .paragraph {
+  font-size: 15px;
   max-width: 290px;
 }
 .sec--security .grid-container {
@@ -72,17 +79,57 @@ header nav a.btn-primary {
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 80px 0;
+  padding-top: 80px;
 }
 .sec .title {
   color: #215aa9;
 }
+@media (max-width: 60rem) {
+  .sec--features article {
+    max-width: 49%;
+  }
+}
+@media (max-width: 40rem) {
+  .sec {
+    padding: 40px 0;
+  }
+  .sec--hero .sec-hero-bottom {
+    padding: 40px 0;
+  }
+  .sec--hero .sec-hero-bottom .heading {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+  .sec--hero .sec-hero-bottom .subheading {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .sec--about img {
+    margin-bottom: 20px;
+  }
+  .sec--features article {
+    max-width: initial;
+    margin-bottom: 20px;
+  }
+  .sec .title {
+    font-size: 26px;
+  }
+}
 
 footer {
   background-color: #4a4a4a;
-  color: white;
   padding: 40px 0;
+  font-size: 12px;
+  color: #9b9b9b;
 }
-footer a {
-  color: white;
+footer span {
+  margin-left: 20px;
+}
+@media (max-width: 40rem) {
+  footer span {
+    margin-left: 0;
+  }
+  footer img {
+    margin-bottom: 20px;
+  }
 }
