@@ -96,7 +96,7 @@ header nav a.btn-primary:hover {
 }
 @media (max-width: 40rem) {
   .sec {
-    padding: 40px 0;
+    padding-top: 75px;
   }
   .sec--hero .sec-hero-bottom {
     padding: 40px 0;
@@ -115,9 +115,17 @@ header nav a.btn-primary:hover {
   .sec--features article {
     max-width: initial;
     margin-bottom: 20px;
+    text-align: center;
+  }
+  .sec--security {
+    padding-bottom: 75px;
   }
   .sec .title {
     font-size: 26px;
+    text-align: center;
+  }
+  .sec .paragraph {
+    text-align: center;
   }
 }
 
