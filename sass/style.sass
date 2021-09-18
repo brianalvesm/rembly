@@ -1,19 +1,31 @@
 // Sass
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap')
+@import "typography"
 
 $primary-color: #215aa9
 $secondary-color: #538ddd
+
+$blue:   #2121A5
+$green:  #4BC789
+$orange: #FD8B26
 
 .flex
 	display: flex
 	flex-wrap: wrap
 
+.grid-x.align-middle
+	height: 100%
+
 body
-	font-family: 'Lato', sans-serif
+	font-family: 'amsipro-regular', sans-serif
 	color: #666
+	.grid-container
+		max-width: 81rem
 
 header
-	background-color: $primary-color
+	background-color: transparent
+	width: 100%
+	height: 100px
+	position: absolute
 	nav a
 		display: inline-block
 		padding: 35px 15px 30px
@@ -28,28 +40,25 @@ header
 				color: white
 
 .sec
-	padding-top: 150px
+	padding-top: 100px
 	&--hero
 		display: flex
-		padding: 0
 		background:
-			image: url('../images/hero-bg.jpg')
+			image: url(' ')
 			position: center
-			size: cover
-			repeat: no-repeat
+			repeat: repeat
+			color: $blue
 		color: white
-		.sec-hero-bottom
-			background-color: rgba(12,33,62,0.75)
-			width: 100%
-			padding: 80px
-			.heading
-				font-weight: 700
-				font-size: 40px
-				line-height: 1
-			.subheading
-				font-size: 32px
+		.heading
+			font-family: 'amsipro-black'
+			font-size: 52px
+			line-height: 1.1
+			.highlight
+				color: $orange
+		.subheading
+			font-size: 21px
 		@media (min-width: 40rem)
-			height: 600px
+			height: 768px
 	&--features
 		article
 			display: inline-flex
