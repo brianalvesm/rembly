@@ -43,6 +43,24 @@
   height: 100%;
 }
 
+.highlight {
+  color: #FD8B26;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #2121A5;
+  position: relative;
+  top: 77px;
+}
+@media (max-width: 60rem) {
+  .separator {
+    display: none;
+  }
+}
+
 body {
   font-family: "amsipro-regular", sans-serif;
   color: #666;
@@ -69,6 +87,18 @@ body .grid-container {
   color: white;
 }
 
+.title {
+  font-family: "amsipro-black";
+  font-size: 32px;
+  color: #2121A5;
+}
+@media (min-width: 40rem) {
+  .title--how-it-works {
+    text-align: center;
+    margin-bottom: 37px;
+  }
+}
+
 header {
   background-color: transparent;
   width: 100%;
@@ -86,7 +116,7 @@ header nav a:hover {
 }
 
 .sec {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .sec--hero {
   display: flex;
@@ -101,9 +131,6 @@ header nav a:hover {
   font-size: 52px;
   line-height: 1.1;
 }
-.sec--hero .heading .highlight {
-  color: #FD8B26;
-}
 .sec--hero .subheading {
   font-size: 21px;
   max-width: 453px;
@@ -114,23 +141,87 @@ header nav a:hover {
     height: 768px;
   }
 }
-.sec--features article {
-  display: inline-flex;
-  justify-content: center;
-  max-width: 33%;
-  flex-wrap: wrap;
-  text-align: center;
+.sec--how-it-works .how-it-works-topics {
+  display: flex;
+  flex-direction: column;
+  width: 284px;
+  align-items: center;
 }
-.sec--features article:nth-child(-n+9) {
+@media (max-width: 40rem) {
+  .sec--how-it-works .how-it-works-topics {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+.sec--how-it-works .how-it-works-topics .topic-numbers {
+  display: block;
+  width: 132px;
+  height: 132px;
+  border-radius: 70px;
+  background-color: #FD8B26;
+  position: relative;
   margin-bottom: 60px;
 }
-.sec--features article .title {
-  color: #538ddd;
-  font-size: 22px;
+.sec--how-it-works .how-it-works-topics .topic-numbers:before {
+  content: "";
+  background-image: url("../images/pin.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 49px;
+  height: 84px;
+  position: absolute;
+  top: -126px;
+  left: 50%;
+  margin-left: -24px;
 }
-.sec--features article .paragraph {
-  font-size: 15px;
-  max-width: 290px;
+@media (max-width: 40rem) {
+  .sec--how-it-works .how-it-works-topics .topic-numbers:before {
+    content: none;
+  }
+}
+.sec--how-it-works .how-it-works-topics .topic-numbers span {
+  position: absolute;
+  left: 5px;
+  top: -70px;
+  color: #2121A5;
+  font-family: "amsipro-black";
+  font-size: 152px;
+}
+@media (max-width: 40rem) {
+  .sec--how-it-works .how-it-works-topics .topic-numbers span {
+    font-size: 56px;
+  }
+}
+@media (max-width: 40rem) {
+  .sec--how-it-works .how-it-works-topics .topic-numbers {
+    flex: none;
+    width: 49px;
+    height: 49px;
+    margin-bottom: initial;
+    margin-right: 18px;
+  }
+}
+.sec--how-it-works .how-it-works-topics .paragraph {
+  font-size: 16px;
+}
+@media (min-width: 40rem) {
+  .sec--how-it-works .how-it-works-topics .paragraph {
+    text-align: center;
+  }
+}
+.sec--how-it-works .topics-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 40rem) {
+  .sec--how-it-works .topics-wrapper {
+    flex-direction: column;
+  }
+}
+.sec--how-it-works .title-align-wrap {
+  height: 88px;
+  display: flex;
+  align-items: flex-end;
 }
 .sec--security {
   padding-bottom: 150px;
@@ -141,14 +232,6 @@ header nav a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 80px;
-}
-.sec .title {
-  color: #215aa9;
-}
-@media (max-width: 60rem) {
-  .sec--features article {
-    max-width: 49%;
-  }
 }
 @media (max-width: 40rem) {
   .sec {
