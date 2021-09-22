@@ -34,41 +34,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.grid-x.align-middle {
-  height: 100%;
-}
-
-.highlight {
-  color: #FD8B26;
-}
-
-.separator {
-  display: block;
-  width: 100%;
-  height: 8px;
-  background-color: #2121A5;
-  position: relative;
-  top: 77px;
-}
-@media (max-width: 60rem) {
-  .separator {
-    display: none;
-  }
-}
-
-body {
-  font-family: "amsipro-regular", sans-serif;
-  color: #666;
-}
-body .grid-container {
-  max-width: 81rem;
-}
-
 .btn {
   padding: 10px 27px 11px;
   font-family: "amsipro-bold";
@@ -168,10 +133,63 @@ header .mobile-wrap {
   }
 }
 
-.sec {
+footer {
+  background-color: #2121A5;
+  padding: 40px 0;
+  font-size: 12px;
+  color: white;
+}
+footer span {
+  margin-left: 20px;
+}
+@media (max-width: 40rem) {
+  footer span {
+    margin-left: 0;
+  }
+  footer img {
+    margin-bottom: 20px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-x.align-middle {
+  height: 100%;
+}
+
+.highlight {
+  color: #FD8B26;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #2121A5;
+  position: relative;
+  top: 77px;
+}
+@media (max-width: 60rem) {
+  .separator {
+    display: none;
+  }
+}
+
+body {
+  font-family: "amsipro-regular", sans-serif;
+  color: #666;
+}
+body .grid-container {
+  max-width: 81rem;
+}
+
+.front-page .sec {
   padding-top: 50px;
 }
-.sec--hero {
+.front-page .sec--hero {
   padding-top: 100px;
   display: flex;
   background-image: url(" ");
@@ -180,43 +198,43 @@ header .mobile-wrap {
   background-color: #2121A5;
   color: white;
 }
-.sec--hero .heading {
+.front-page .sec--hero .heading {
   font-family: "amsipro-black";
   font-size: 52px;
   line-height: 1.1;
 }
 @media (max-width: 40rem) {
-  .sec--hero .heading {
+  .front-page .sec--hero .heading {
     font-size: 28px;
   }
 }
-.sec--hero .subheading {
+.front-page .sec--hero .subheading {
   font-size: 21px;
   max-width: 453px;
   margin: 45px 0 60px;
 }
-.sec--hero .hero-img {
+.front-page .sec--hero .hero-img {
   position: relative;
   bottom: 0;
 }
 @media (min-width: 40rem) {
-  .sec--hero {
+  .front-page .sec--hero {
     height: 768px;
   }
 }
-.sec--how-it-works .how-it-works-topics {
+.front-page .sec--how-it-works .how-it-works-topics {
   display: flex;
   flex-direction: column;
   width: 284px;
   align-items: center;
 }
 @media (max-width: 40rem) {
-  .sec--how-it-works .how-it-works-topics {
+  .front-page .sec--how-it-works .how-it-works-topics {
     flex-direction: row;
     width: 100%;
   }
 }
-.sec--how-it-works .how-it-works-topics .topic-numbers {
+.front-page .sec--how-it-works .how-it-works-topics .topic-numbers {
   display: block;
   width: 132px;
   height: 132px;
@@ -225,7 +243,7 @@ header .mobile-wrap {
   position: relative;
   margin-bottom: 60px;
 }
-.sec--how-it-works .how-it-works-topics .topic-numbers:before {
+.front-page .sec--how-it-works .how-it-works-topics .topic-numbers:before {
   content: "";
   background-image: url("../images/pin.png");
   background-repeat: no-repeat;
@@ -238,11 +256,11 @@ header .mobile-wrap {
   margin-left: -24px;
 }
 @media (max-width: 40rem) {
-  .sec--how-it-works .how-it-works-topics .topic-numbers:before {
+  .front-page .sec--how-it-works .how-it-works-topics .topic-numbers:before {
     content: none;
   }
 }
-.sec--how-it-works .how-it-works-topics .topic-numbers span {
+.front-page .sec--how-it-works .how-it-works-topics .topic-numbers span {
   position: absolute;
   left: 5px;
   top: -70px;
@@ -251,12 +269,12 @@ header .mobile-wrap {
   font-size: 152px;
 }
 @media (max-width: 40rem) {
-  .sec--how-it-works .how-it-works-topics .topic-numbers span {
+  .front-page .sec--how-it-works .how-it-works-topics .topic-numbers span {
     font-size: 56px;
   }
 }
 @media (max-width: 40rem) {
-  .sec--how-it-works .how-it-works-topics .topic-numbers {
+  .front-page .sec--how-it-works .how-it-works-topics .topic-numbers {
     flex: none;
     width: 49px;
     height: 49px;
@@ -264,95 +282,56 @@ header .mobile-wrap {
     margin-right: 18px;
   }
 }
-.sec--how-it-works .how-it-works-topics .title--how-it-works {
+.front-page .sec--how-it-works .how-it-works-topics .title--how-it-works {
   font-size: 24px;
 }
 @media (min-width: 40rem) {
-  .sec--how-it-works .how-it-works-topics .title--how-it-works {
+  .front-page .sec--how-it-works .how-it-works-topics .title--how-it-works {
     font-size: 32px;
     text-align: center;
     margin-bottom: 37px;
   }
 }
-.sec--how-it-works .how-it-works-topics .paragraph {
+.front-page .sec--how-it-works .how-it-works-topics .paragraph {
   font-size: 16px;
 }
 @media (min-width: 40rem) {
-  .sec--how-it-works .how-it-works-topics .paragraph {
+  .front-page .sec--how-it-works .how-it-works-topics .paragraph {
     text-align: center;
   }
 }
-.sec--how-it-works .topics-wrapper {
+.front-page .sec--how-it-works .topics-wrapper {
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 40rem) {
-  .sec--how-it-works .topics-wrapper {
+  .front-page .sec--how-it-works .topics-wrapper {
     flex-direction: column;
   }
 }
-.sec--how-it-works .title-align-wrap {
+.front-page .sec--how-it-works .title-align-wrap {
   height: 88px;
   display: flex;
   align-items: flex-end;
 }
 @media (min-width: 40rem) {
-  .sec--how-it-works .title-align-wrap {
+  .front-page .sec--how-it-works .title-align-wrap {
     justify-content: center;
   }
 }
-.sec--security {
-  padding-bottom: 150px;
-}
-.sec--security .grid-container {
-  background-image: url("../images/separator.png");
-  background-position: top center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-}
 @media (max-width: 40rem) {
-  .sec {
+  .front-page .sec {
     padding-top: 75px;
   }
-  .sec--hero .sec-hero-bottom {
+  .front-page .sec--hero .sec-hero-bottom {
     padding: 40px 0;
   }
-  .sec--hero .sec-hero-bottom .heading {
+  .front-page .sec--hero .sec-hero-bottom .heading {
     font-size: 26px;
     line-height: 1.4;
   }
-  .sec--hero .sec-hero-bottom .subheading {
+  .front-page .sec--hero .sec-hero-bottom .subheading {
     font-size: 20px;
     line-height: 1.4;
-  }
-  .sec--about img {
-    margin-bottom: 20px;
-  }
-  .sec--features article {
-    max-width: initial;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .sec--security {
-    padding-bottom: 75px;
-  }
-}
-
-footer {
-  background-color: #4a4a4a;
-  padding: 40px 0;
-  font-size: 12px;
-  color: #9b9b9b;
-}
-footer span {
-  margin-left: 20px;
-}
-@media (max-width: 40rem) {
-  footer span {
-    margin-left: 0;
-  }
-  footer img {
-    margin-bottom: 20px;
   }
 }

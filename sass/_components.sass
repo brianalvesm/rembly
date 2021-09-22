@@ -1,0 +1,91 @@
+// Components
+.btn
+	padding: 10px 27px 11px
+	font-family: 'amsipro-bold'
+	font-size: 14px
+	color: white
+	text-transform: uppercase
+	border-radius: 22px
+	&--primary
+		background-color: $green
+	&--secondary
+		background-color: $orange
+	&:hover
+		color: white
+
+.title
+	font-family: 'amsipro-black'
+	font-size: 42px
+	color: $blue
+	@media (max-width: 40rem)
+		font-size: 24px
+
+// Header
+header
+	background-color: transparent
+	width: 100%
+	height: 100px
+	padding-top: 24px
+	position: absolute
+	z-index: 1
+	nav a
+		display: inline-block
+		margin-left: 28px
+		color: white
+		&:hover
+			color: $orange
+	.mobile-wrap
+		width: 100%
+		display: flex
+		justify-content: space-between
+	@media (max-width: 40rem)
+		background-color: $blue
+		height: 64px
+		padding-top: initial
+		position: fixed
+		box-shadow: 3px 3px 6px rgba(black, 0.16)
+		nav a:not(.btn)
+			padding: 10px 0 13px 50px
+			margin-left: initial
+			width: 100% 
+			&:hover
+				background-color: rgba(white, 0.1)
+		.btn
+			margin-left: 50px
+			&--secondary
+				margin-top: 10px
+		.logo-rembly
+			width: 114px
+		.mobile-wrap
+			display: initial
+			justify-content: initial
+			background-color: $blue
+			position: fixed
+			height: 100%
+			width: 80%
+			top: 64px
+			left: 0
+			z-index: 2
+		.title-bar
+			background: transparent
+			width: 100%
+			height: 64px
+			padding: 16px 0px
+			justify-content: center
+			.menu-icon
+				position: absolute
+				left: 23px
+
+// Footer
+footer
+	background-color: $blue
+	padding: 40px 0
+	font-size: 12px
+	color: white
+	span
+		margin-left: 20px
+	@media (max-width: 40rem)
+		span
+			margin-left: 0
+		img
+			margin-bottom: 20px

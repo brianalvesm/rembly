@@ -1,10 +1,7 @@
 // Sass
+@import "variables"
 @import "typography"
-
-// Variables
-$blue:   #2121A5
-$green:  #4BC789
-$orange: #FD8B26
+@import "components"
 
 // Helpers
 .flex
@@ -34,218 +31,109 @@ body
 	.grid-container
 		max-width: 81rem
 
-// Components
-.btn
-	padding: 10px 27px 11px
-	font-family: 'amsipro-bold'
-	font-size: 14px
-	color: white
-	text-transform: uppercase
-	border-radius: 22px
-	&--primary
-		background-color: $green
-	&--secondary
-		background-color: $orange
-	&:hover
-		color: white
-
-.title
-	font-family: 'amsipro-black'
-	font-size: 42px
-	color: $blue
-	@media (max-width: 40rem)
-		font-size: 24px
-
-// Header
-header
-	background-color: transparent
-	width: 100%
-	height: 100px
-	padding-top: 24px
-	position: absolute
-	z-index: 1
-	nav a
-		display: inline-block
-		margin-left: 28px
-		color: white
-		&:hover
-			color: $orange
-	.mobile-wrap
-		width: 100%
-		display: flex
-		justify-content: space-between
-	@media (max-width: 40rem)
-		background-color: $blue
-		height: 64px
-		padding-top: initial
-		position: fixed
-		box-shadow: 3px 3px 6px rgba(black, 0.16)
-		nav a:not(.btn)
-			padding: 10px 0 13px 50px
-			margin-left: initial
-			width: 100% 
-			&:hover
-				background-color: rgba(white, 0.1)
-		.btn
-			margin-left: 50px
-			&--secondary
-				margin-top: 10px
-		.logo-rembly
-			width: 114px
-		.mobile-wrap
-			display: initial
-			justify-content: initial
-			background-color: $blue
-			position: fixed
-			height: 100%
-			width: 80%
-			top: 64px
-			left: 0
-			z-index: 2
-		.title-bar
-			background: transparent
-			width: 100%
-			height: 64px
-			padding: 16px 0px
-			justify-content: center
-			.menu-icon
-				position: absolute
-				left: 23px
-
-// Sections
-.sec
-	padding-top: 50px
-	&--hero
-		padding-top: 100px
-		display: flex
-		background:
-			image: url(' ')
-			position: center
-			repeat: repeat
-			color: $blue
-		color: white
-		.heading
-			font-family: 'amsipro-black'
-			font-size: 52px
-			line-height: 1.1
-			@media (max-width: 40rem)
-				font-size: 28px
-		.subheading
-			font-size: 21px
-			max-width: 453px
-			margin: 45px 0 60px
-		.hero-img
-			position: relative
-			bottom: 0
-		@media (min-width: 40rem)
-			height: 768px
-	&--how-it-works
-		.how-it-works-topics
-			display: flex
-			flex-direction: column
-			width: 284px
-			align-items: center
-			@media (max-width: 40rem)
-				flex-direction: row
-				width: 100%
-			.topic-numbers
-				display: block
-				width: 132px
-				height: 132px
-				border-radius: 70px
-				background-color: $orange
-				position: relative
-				margin-bottom: 60px
-				&:before
-					content: ""
-					background-image: url('../images/pin.png')
-					background-repeat: no-repeat
-					display: block
-					width: 49px
-					height: 84px
-					position: absolute
-					top: -126px
-					left: 50%
-					margin-left: -24px
-					@media (max-width: 40rem)
-						content: none
-				span
-					position: absolute
-					left: 5px
-					top: -70px
-					color: $blue
-					font-family: 'amsipro-black'
-					font-size: 152px
-					@media (max-width: 40rem)
-						font-size: 56px
-				@media (max-width: 40rem)
-					flex: none
-					width: 49px
-					height: 49px
-					margin-bottom: initial
-					margin-right: 18px
-			.title--how-it-works
-				font-size: 24px
-				@media (min-width: 40rem)
-					font-size: 32px
-					text-align: center
-					margin-bottom: 37px
-			.paragraph
-				font-size: 16px
-				@media (min-width: 40rem)
-					text-align: center
-		.topics-wrapper
-			display: flex
-			justify-content: space-between
-			@media (max-width: 40rem)
-				flex-direction: column
-		.title-align-wrap
-			height: 88px
-			display: flex
-			align-items: flex-end
-			@media (min-width: 40rem)
-				justify-content: center
-	&--security
-		padding-bottom: 150px
-		.grid-container
-			background:
-				image: url('../images/separator.png')
-				position: top center
-				size: contain
-				repeat: no-repeat
-			padding-top: 80px
-	@media (max-width: 40rem)
-		padding-top: 75px
+// Página Inicial
+.front-page
+	// Sections
+	.sec
+		padding-top: 50px
 		&--hero
-			.sec-hero-bottom
-				padding: 40px 0
-				.heading
-					font-size: 26px
-					line-height: 1.4
-				.subheading
-					font-size: 20px
-					line-height: 1.4
-		&--about
-			img
-				margin-bottom: 20px
-		&--features
-			article
-				max-width: initial
-				margin-bottom: 20px
-				text-align: center
-		&--security
-			padding-bottom: 75px
-
-// Footer
-footer
-	background-color: #4a4a4a
-	padding: 40px 0
-	font-size: 12px
-	color: #9b9b9b
-	span
-		margin-left: 20px
-	@media (max-width: 40rem)
-		span
-			margin-left: 0
-		img
-			margin-bottom: 20px
+			padding-top: 100px
+			display: flex
+			background:
+				image: url(' ')
+				position: center
+				repeat: repeat
+				color: $blue
+			color: white
+			.heading
+				font-family: 'amsipro-black'
+				font-size: 52px
+				line-height: 1.1
+				@media (max-width: 40rem)
+					font-size: 28px
+			.subheading
+				font-size: 21px
+				max-width: 453px
+				margin: 45px 0 60px
+			.hero-img
+				position: relative
+				bottom: 0
+			@media (min-width: 40rem)
+				height: 768px
+		&--how-it-works
+			.how-it-works-topics
+				display: flex
+				flex-direction: column
+				width: 284px
+				align-items: center
+				@media (max-width: 40rem)
+					flex-direction: row
+					width: 100%
+				.topic-numbers
+					display: block
+					width: 132px
+					height: 132px
+					border-radius: 70px
+					background-color: $orange
+					position: relative
+					margin-bottom: 60px
+					&:before
+						content: ""
+						background-image: url('../images/pin.png')
+						background-repeat: no-repeat
+						display: block
+						width: 49px
+						height: 84px
+						position: absolute
+						top: -126px
+						left: 50%
+						margin-left: -24px
+						@media (max-width: 40rem)
+							content: none
+					span
+						position: absolute
+						left: 5px
+						top: -70px
+						color: $blue
+						font-family: 'amsipro-black'
+						font-size: 152px
+						@media (max-width: 40rem)
+							font-size: 56px
+					@media (max-width: 40rem)
+						flex: none
+						width: 49px
+						height: 49px
+						margin-bottom: initial
+						margin-right: 18px
+				.title--how-it-works
+					font-size: 24px
+					@media (min-width: 40rem)
+						font-size: 32px
+						text-align: center
+						margin-bottom: 37px
+				.paragraph
+					font-size: 16px
+					@media (min-width: 40rem)
+						text-align: center
+			.topics-wrapper
+				display: flex
+				justify-content: space-between
+				@media (max-width: 40rem)
+					flex-direction: column
+			.title-align-wrap
+				height: 88px
+				display: flex
+				align-items: flex-end
+				@media (min-width: 40rem)
+					justify-content: center
+		@media (max-width: 40rem)
+			padding-top: 75px
+			&--hero
+				.sec-hero-bottom
+					padding: 40px 0
+					.heading
+						font-size: 26px
+						line-height: 1.4
+					.subheading
+						font-size: 20px
+						line-height: 1.4
