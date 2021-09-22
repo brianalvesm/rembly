@@ -38,6 +38,8 @@ header
 		width: 100%
 		display: flex
 		justify-content: space-between
+		.close-icon
+			display: none
 	@media (max-width: 40rem)
 		background-color: $blue
 		height: 64px
@@ -63,9 +65,17 @@ header
 			position: fixed
 			height: 100%
 			width: 80%
-			top: 64px
+			top: 0
 			left: 0
 			z-index: 2
+			box-shadow: 3px 3px 6px rgba(black, 0.16)
+			.close-icon
+				display: inline-flex
+				width: 14px
+				height: 14px
+				cursor: pointer
+		.mobile-menu-opened-header
+			padding: 18px 20px
 		.title-bar
 			background: transparent
 			width: 100%
