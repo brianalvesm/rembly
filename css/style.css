@@ -198,7 +198,7 @@ footer span {
 
 body {
   font-family: "amsipro-regular", sans-serif;
-  color: #666;
+  color: #2C2C2C;
 }
 body .grid-container {
   max-width: 81rem;
@@ -368,7 +368,48 @@ body .grid-container {
 .front-page .sec--why-purchase .disclaimer {
   display: block;
   font-size: 12px;
-  color: #b7b7b7;
+  color: #B7B7B7;
+}
+.front-page .sec--why-purchase .stats-wrapper {
+  padding: 40px 0;
+}
+.front-page .sec--why-purchase .stats-wrapper .percentage {
+  font-family: "amsipro-black";
+  font-size: 110px;
+  color: #FD8B26;
+  line-height: 1;
+  position: relative;
+}
+.front-page .sec--why-purchase .stats-wrapper .percentage:after {
+  content: "%";
+  display: block;
+  position: absolute;
+  top: 28px;
+  right: -50px;
+  font-family: "amsipro-black";
+  font-size: calc(110px - 50%);
+  color: #FD8B26;
+}
+.front-page .sec--why-purchase .stats-wrapper .percentage--small {
+  font-size: 70px;
+}
+.front-page .sec--why-purchase .stats-wrapper .percentage--small:after {
+  top: 18px;
+  right: -35px;
+  font-size: calc(70px - 50%);
+}
+.front-page .sec--why-purchase .stats-wrapper .stats-text {
+  font-family: "amsipro-black";
+  font-size: 21px;
+  color: #2121A5;
+}
+.front-page .sec--why-purchase .ampersand {
+  font-family: "amsipro-black";
+  font-size: 90px;
+  color: #B7B7B7;
+  line-height: 0.9;
+  padding: 40px 0;
+  margin: 0 32px;
 }
 .front-page .sec--highlighted {
   background-color: #FD8B26;
