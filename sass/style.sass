@@ -63,6 +63,15 @@ body
 				bottom: 0
 			@media (min-width: 40rem)
 				height: 768px
+			@media (max-width: 40rem)
+				.sec-hero-bottom
+					padding: 40px 0
+					.heading
+						font-size: 26px
+						line-height: 1.4
+					.subheading
+						font-size: 20px
+						line-height: 1.4
 		&--how-it-works
 			padding: 126px 0 20px
 			.how-it-works-topics
@@ -195,14 +204,34 @@ body
 			color: white
 			.btn
 				box-shadow: $shadow
+		&--differentials
+			.differentials-wrap
+				max-width: 303px
+				margin: auto
+				.ornament
+					position: relative
+					@media (min-width: 40rem)
+						&:before
+							content: ""
+							background:
+								image: url('../images/ornament.png')
+								repeat: no-repeat
+							display: block
+							width: 55px
+							height: 97px
+							position: absolute
+						&--left:before
+							top: 0
+							left: -65px
+						&--right:before
+							bottom: 0
+							right: -75px
+							transform: rotate(180deg)
+			.title--differentials
+				font-family: 'amsipro-black'
+				font-size: 21px
+				line-height: 1.1
+				color: $orange
+				margin: 20px 0
 		@media (max-width: 40rem)
 			padding-top: 75px
-			&--hero
-				.sec-hero-bottom
-					padding: 40px 0
-					.heading
-						font-size: 26px
-						line-height: 1.4
-					.subheading
-						font-size: 20px
-						line-height: 1.4

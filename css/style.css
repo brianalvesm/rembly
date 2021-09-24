@@ -240,6 +240,19 @@ body .grid-container {
     height: 768px;
   }
 }
+@media (max-width: 40rem) {
+  .front-page .sec--hero .sec-hero-bottom {
+    padding: 40px 0;
+  }
+  .front-page .sec--hero .sec-hero-bottom .heading {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+  .front-page .sec--hero .sec-hero-bottom .subheading {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
 .front-page .sec--how-it-works {
   padding: 126px 0 20px;
 }
@@ -418,19 +431,42 @@ body .grid-container {
 .front-page .sec--highlighted .btn {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
 }
+.front-page .sec--differentials .differentials-wrap {
+  max-width: 303px;
+  margin: auto;
+}
+.front-page .sec--differentials .differentials-wrap .ornament {
+  position: relative;
+}
+@media (min-width: 40rem) {
+  .front-page .sec--differentials .differentials-wrap .ornament:before {
+    content: "";
+    background-image: url("../images/ornament.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 55px;
+    height: 97px;
+    position: absolute;
+  }
+  .front-page .sec--differentials .differentials-wrap .ornament--left:before {
+    top: 0;
+    left: -65px;
+  }
+  .front-page .sec--differentials .differentials-wrap .ornament--right:before {
+    bottom: 0;
+    right: -75px;
+    transform: rotate(180deg);
+  }
+}
+.front-page .sec--differentials .title--differentials {
+  font-family: "amsipro-black";
+  font-size: 21px;
+  line-height: 1.1;
+  color: #FD8B26;
+  margin: 20px 0;
+}
 @media (max-width: 40rem) {
   .front-page .sec {
     padding-top: 75px;
-  }
-  .front-page .sec--hero .sec-hero-bottom {
-    padding: 40px 0;
-  }
-  .front-page .sec--hero .sec-hero-bottom .heading {
-    font-size: 26px;
-    line-height: 1.4;
-  }
-  .front-page .sec--hero .sec-hero-bottom .subheading {
-    font-size: 20px;
-    line-height: 1.4;
   }
 }
