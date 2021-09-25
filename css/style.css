@@ -167,7 +167,6 @@ footer span {
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .grid-x.align-middle {
@@ -275,6 +274,9 @@ body .grid-container {
   .front-page .sec--hero .subheading {
     font-size: 20px;
     line-height: 1.4;
+  }
+  .front-page .sec--hero .hero-img {
+    max-width: 340px;
   }
 }
 .front-page .sec--posthero .subheading {
@@ -467,6 +469,46 @@ body .grid-container {
   line-height: 0.9;
   padding: 40px 0;
   margin: 0 32px;
+}
+@media (max-width: 40rem) {
+  .front-page .sec--why-purchase .card {
+    padding: 25px;
+  }
+  .front-page .sec--why-purchase .card .percentage {
+    font-size: 50px;
+  }
+  .front-page .sec--why-purchase .card .card-text {
+    font-size: 16px;
+    max-width: 165px;
+  }
+  .front-page .sec--why-purchase .align-bottom {
+    justify-content: center;
+  }
+  .front-page .sec--why-purchase .stats-wrapper .percentage {
+    font-size: 78px;
+  }
+  .front-page .sec--why-purchase .stats-wrapper .percentage:after {
+    top: 18px;
+    right: -38px;
+    font-size: calc(78px - 50%);
+  }
+  .front-page .sec--why-purchase .stats-wrapper .percentage--small {
+    font-size: 40px;
+  }
+  .front-page .sec--why-purchase .stats-wrapper .percentage--small:after {
+    top: 8px;
+    right: -20px;
+    font-size: calc(40px - 50%);
+  }
+  .front-page .sec--why-purchase .stats-wrapper .stats-text {
+    font-size: 14px;
+  }
+  .front-page .sec--why-purchase .ampersand {
+    font-size: 64px;
+  }
+  .front-page .sec--why-purchase .text-center-mobile {
+    font-size: 12px;
+  }
 }
 .front-page .sec--highlighted {
   background-color: #FD8B26;

@@ -6,7 +6,6 @@
 // Helpers
 .flex
 	display: flex
-	flex-wrap: wrap
 
 .grid-x.align-middle
 	height: 100%
@@ -88,6 +87,8 @@ body
 				.subheading
 					font-size: 20px
 					line-height: 1.4
+				.hero-img
+					max-width: 340px
 		&--posthero
 			.subheading
 				font-size: 12px
@@ -229,6 +230,35 @@ body
 				line-height: 0.9
 				padding: 40px 0
 				margin: 0 32px
+			@media (max-width: 40rem)
+				.card
+					padding: 25px
+					.percentage
+						font-size: 50px
+					.card-text
+						font-size: 16px
+						max-width: 165px
+				.align-bottom
+					justify-content: center
+				.stats-wrapper
+					.percentage
+						font-size: 78px
+						&:after
+							top: 18px
+							right: -38px
+							font-size: calc(78px - 50%)
+						&--small
+							font-size: 40px
+							&:after
+								top: 8px
+								right: -20px
+								font-size: calc(40px - 50%)
+					.stats-text
+						font-size: 14px
+				.ampersand
+					font-size: 64px
+				.text-center-mobile
+					font-size: 12px
 		&--highlighted
 			background-color: $orange
 			color: white
