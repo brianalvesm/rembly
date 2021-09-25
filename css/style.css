@@ -431,6 +431,43 @@ body .grid-container {
 .front-page .sec--highlighted .btn {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
 }
+.front-page .sec--highlighted .sec-highlighted--title {
+  font-family: "amsipro-black";
+  font-size: 24px;
+  line-height: 1.1;
+  color: #2121A5;
+}
+.front-page .sec--highlighted .sec-highlighted--description {
+  line-height: 1.2;
+  max-width: 287px;
+}
+.front-page .sec--highlighted .flex {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.front-page .sec--highlighted .flex.outer-flex {
+  flex-direction: column;
+  gap: 28px;
+}
+.front-page .sec--highlighted .flex.inner-flex {
+  gap: 24px;
+}
+@media (max-width: 40rem) {
+  .front-page .sec--highlighted .sec-highlighted--title {
+    display: none;
+  }
+  .front-page .sec--highlighted .sec-highlighted--description {
+    font-family: "amsipro-bold";
+    font-size: 12px;
+    max-width: 210px;
+  }
+  .front-page .sec--highlighted img {
+    width: 65px;
+  }
+  .front-page .sec--highlighted .flex.outer-flex {
+    flex-direction: row;
+  }
+}
 .front-page .sec--differentials .differentials-wrap {
   max-width: 303px;
   margin: auto;

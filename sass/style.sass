@@ -204,6 +204,33 @@ body
 			color: white
 			.btn
 				box-shadow: $shadow
+			.sec-highlighted--title
+				font-family: 'amsipro-black'
+				font-size: 24px
+				line-height: 1.1
+				color: $blue
+			.sec-highlighted--description
+				line-height: 1.2
+				max-width: 287px
+			.flex
+				flex-wrap: nowrap
+				align-items: center
+				&.outer-flex
+					flex-direction: column
+					gap: 28px
+				&.inner-flex
+					gap: 24px
+			@media (max-width: 40rem)
+				.sec-highlighted--title
+					display: none
+				.sec-highlighted--description
+					font-family: 'amsipro-bold'
+					font-size: 12px
+					max-width: 210px
+				img
+					width: 65px
+				.flex.outer-flex
+					flex-direction: row
 		&--differentials
 			.differentials-wrap
 				max-width: 303px
