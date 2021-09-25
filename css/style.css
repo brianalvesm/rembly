@@ -430,6 +430,14 @@ body .grid-container {
 }
 .front-page .sec--highlighted .btn {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-top: 60px;
+}
+.front-page .sec--highlighted .disclaimer {
+  display: block;
+  font-size: 12px;
+}
+.front-page .sec--highlighted .sec-highlighted-content-space {
+  margin: 70px 0 30px;
 }
 .front-page .sec--highlighted .sec-highlighted--title {
   font-family: "amsipro-black";
@@ -457,15 +465,20 @@ body .grid-container {
     display: none;
   }
   .front-page .sec--highlighted .sec-highlighted--description {
-    font-family: "amsipro-bold";
+    font-family: "amsipro-black";
     font-size: 12px;
-    max-width: 210px;
+    max-width: 225px;
   }
   .front-page .sec--highlighted img {
     width: 65px;
   }
   .front-page .sec--highlighted .flex.outer-flex {
     flex-direction: row;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  .front-page .sec--highlighted .flex.outer-flex.row-reverse-mobile {
+    flex-direction: row-reverse;
   }
 }
 .front-page .sec--differentials .differentials-wrap {
