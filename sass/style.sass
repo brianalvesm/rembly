@@ -27,6 +27,19 @@
 	@media (max-width: 60rem)
 		display: none
 
+.show-for-small-only
+	display: none
+
+@media print, screen and (max-width: 39.99875em)
+	.hide-for-small-only
+		display: none
+
+	.show-for-small-only
+		display: inline-block
+
+	.text-center-mobile
+		text-align: center
+
 // Base
 body
 	font-family: 'amsipro-regular', sans-serif
@@ -39,6 +52,8 @@ body
 	// Sections
 	.sec
 		padding: 50px 0
+		@media (max-width: 40rem)
+			padding-top: 75px
 		&--hero
 			padding-top: 100px
 			display: flex
@@ -64,16 +79,29 @@ body
 			@media (min-width: 40rem)
 				height: 768px
 			@media (max-width: 40rem)
-				.sec-hero-bottom
-					padding: 40px 0
-					.heading
-						font-size: 26px
-						line-height: 1.4
-					.subheading
-						font-size: 20px
-						line-height: 1.4
+				height: 440px
+				.heading
+					font-size: 26px
+					line-height: 1.4
+					text-align: center
+					margin-top: 30px
+				.subheading
+					font-size: 20px
+					line-height: 1.4
+		&--posthero
+			.subheading
+				font-size: 12px
+				max-width: 265px
+				margin-bottom: 60px
+			@media (max-width: 40rem)
+				padding-top: 240px
 		&--how-it-works
-			padding: 126px 0 20px
+			.title
+				margin-bottom: 175px
+				@media (max-width: 40rem)
+					margin-bottom: 0
+			.btn
+				margin-top: 70px
 			.how-it-works-topics
 				display: flex
 				flex-direction: column
@@ -112,6 +140,7 @@ body
 						font-size: 152px
 						@media (max-width: 40rem)
 							font-size: 56px
+							top: -26px
 					@media (max-width: 40rem)
 						flex: none
 						width: 49px
@@ -120,6 +149,7 @@ body
 						margin-right: 18px
 				.title--how-it-works
 					font-size: 24px
+					margin-bottom: 0
 					@media (min-width: 40rem)
 						font-size: 32px
 						text-align: center
@@ -270,5 +300,3 @@ body
 				line-height: 1.1
 				color: $orange
 				margin: 20px 0
-		@media (max-width: 40rem)
-			padding-top: 75px
