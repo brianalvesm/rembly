@@ -46,294 +46,340 @@ body
 	.grid-container
 		max-width: 81rem
 
-// Página Inicial
-.front-page
-	// Sections
-	.sec
-		padding: 50px 0
+// Sections
+.sec
+	padding: 50px 0
+	@media (max-width: 40rem)
+		padding: 25px 0
+	&--hero
+		padding-top: 100px
+		display: flex
+		background:
+			image: url(' ')
+			position: center
+			repeat: repeat
+			color: $blue
+		color: white
+		.heading
+			font-family: 'amsipro-black'
+			font-size: 52px
+			line-height: 1.1
+			@media (max-width: 40rem)
+				font-size: 28px
+		.subheading
+			font-size: 21px
+			max-width: 453px
+			margin: 45px 0 60px
+		.hero-img
+			position: relative
+			bottom: 0
+		@media (min-width: 40rem)
+			height: 768px
 		@media (max-width: 40rem)
-			padding: 25px 0
-		&--hero
-			padding-top: 100px
-			display: flex
-			background:
-				image: url(' ')
-				position: center
-				repeat: repeat
-				color: $blue
-			color: white
+			height: 440px
 			.heading
-				font-family: 'amsipro-black'
-				font-size: 52px
-				line-height: 1.1
-				@media (max-width: 40rem)
-					font-size: 28px
+				font-size: 26px
+				line-height: 1.4
+				text-align: center
+				margin-top: 30px
 			.subheading
-				font-size: 21px
-				max-width: 453px
-				margin: 45px 0 60px
+				font-size: 20px
+				line-height: 1.4
 			.hero-img
-				position: relative
-				bottom: 0
-			@media (min-width: 40rem)
-				height: 768px
-			@media (max-width: 40rem)
-				height: 440px
-				.heading
-					font-size: 26px
-					line-height: 1.4
-					text-align: center
-					margin-top: 30px
-				.subheading
-					font-size: 20px
-					line-height: 1.4
-				.hero-img
-					max-width: 340px
-		&--posthero
-			.subheading
+				max-width: 340px
+	&--posthero
+		.subheading
+			font-size: 12px
+			max-width: 265px
+		.btn
+			margin: 30px 0
+		@media (max-width: 40rem)
+			padding-top: 240px
+			.paragraph
 				font-size: 12px
-				max-width: 265px
-			.btn
-				margin: 30px 0
+	&--how-it-works
+		.title
+			margin-bottom: 175px
 			@media (max-width: 40rem)
-				padding-top: 240px
-				.paragraph
-					font-size: 12px
-		&--how-it-works
-			.title
-				margin-bottom: 175px
-				@media (max-width: 40rem)
-					margin-bottom: 0
-			.btn
-				margin-top: 70px
-			.how-it-works-topics
-				display: flex
-				flex-direction: column
-				width: 284px
-				align-items: center
-				@media (max-width: 40rem)
-					flex-direction: row
-					width: 100%
-				.topic-numbers
+				margin-bottom: 0
+		.btn
+			margin-top: 70px
+		.how-it-works-topics
+			display: flex
+			flex-direction: column
+			width: 284px
+			align-items: center
+			@media (max-width: 40rem)
+				flex-direction: row
+				width: 100%
+			.topic-numbers
+				display: block
+				width: 132px
+				height: 132px
+				border-radius: 70px
+				background-color: $orange
+				position: relative
+				margin-bottom: 60px
+				&:before
+					content: ""
+					background-image: url('../images/pin.png')
+					background-repeat: no-repeat
 					display: block
-					width: 132px
-					height: 132px
-					border-radius: 70px
-					background-color: $orange
-					position: relative
-					margin-bottom: 60px
+					width: 49px
+					height: 84px
+					position: absolute
+					top: -126px
+					left: 50%
+					margin-left: -24px
+					@media (max-width: 40rem)
+						content: none
+				span
+					position: absolute
+					left: 5px
+					top: -70px
+					color: $blue
+					font-family: 'amsipro-black'
+					font-size: 152px
+					@media (max-width: 40rem)
+						font-size: 56px
+						top: -26px
+				@media (max-width: 40rem)
+					flex: none
+					width: 49px
+					height: 49px
+					margin-bottom: initial
+					margin-right: 18px
+			.title--how-it-works
+				font-size: 24px
+				margin-bottom: 0
+				@media (min-width: 40rem)
+					font-size: 32px
+					text-align: center
+					margin-bottom: 37px
+			.paragraph
+				font-size: 16px
+				@media (min-width: 40rem)
+					text-align: center
+		.topics-wrapper
+			display: flex
+			justify-content: space-between
+			@media (max-width: 40rem)
+				flex-direction: column
+		.title-align-wrap
+			height: 88px
+			display: flex
+			align-items: flex-end
+			@media (min-width: 40rem)
+				justify-content: center
+	&--why-purchase
+		.cards-spacing
+			margin: 40px 0
+		.card
+			background-color: $blue
+			border-radius: 14px
+			display: flex
+			flex-direction: row
+			align-items: center
+			justify-content: center
+			height: 200px
+			.percentage
+				color: $orange
+				font-family: 'amsipro-black'
+				font-size: 63px
+				margin-right: 9px
+			.card-text
+				font-family: 'amsipro-black'
+				font-size: 21px
+				line-height: 1.1
+				color: white
+				max-width: 200px
+		.disclaimer
+			display: block
+			font-size: 12px
+			color: $gray
+		.stats-wrapper
+			padding: 40px 0
+			.percentage
+				font-family: 'amsipro-black'
+				font-size: 110px
+				color: $orange
+				line-height: 1
+				position: relative
+				&:after
+					content: "%"
+					display: block
+					position: absolute
+					top: 28px
+					right: -50px
+					font-family: 'amsipro-black'
+					font-size: calc(110px - 50%)
+					color: $orange
+				&--small
+					font-size: 70px
+					&:after
+						top: 18px
+						right: -35px
+						font-size: calc(70px - 50%)
+			.stats-text
+				font-family: 'amsipro-black'
+				font-size: 21px
+				color: $blue
+		.ampersand
+			font-family: 'amsipro-black'
+			font-size: 90px
+			color: $gray
+			line-height: 0.9
+			padding: 40px 0
+			margin: 0 32px
+		@media (max-width: 40rem)
+			.card
+				padding: 25px
+				.percentage
+					font-size: 50px
+				.card-text
+					font-size: 16px
+					max-width: 165px
+			.align-bottom
+				justify-content: center
+			.stats-wrapper
+				.percentage
+					font-size: 78px
+					&:after
+						top: 18px
+						right: -38px
+						font-size: calc(78px - 50%)
+					&--small
+						font-size: 40px
+						&:after
+							top: 8px
+							right: -20px
+							font-size: calc(40px - 50%)
+				.stats-text
+					font-size: 14px
+			.ampersand
+				font-size: 64px
+			.text-center-mobile
+				font-size: 12px
+	&--highlighted
+		background-color: $orange
+		color: white
+		.btn
+			box-shadow: $shadow
+			margin-top: 60px
+		.disclaimer
+			display: block
+			font-size: 12px
+		.sec-highlighted-content-space
+			margin: 70px 0 30px
+		.sec-highlighted--title
+			font-family: 'amsipro-black'
+			font-size: 24px
+			line-height: 1.1
+			color: $blue
+		.sec-highlighted--description
+			line-height: 1.2
+			max-width: 287px
+		.flex
+			flex-wrap: nowrap
+			align-items: center
+			&.outer-flex
+				flex-direction: column
+				gap: 28px
+			&.inner-flex
+				gap: 24px
+		@media (max-width: 40rem)
+			.sec-highlighted--title
+				display: none
+			.sec-highlighted--description
+				font-family: 'amsipro-black'
+				font-size: 12px
+				max-width: 225px
+			img
+				width: 65px
+			.flex.outer-flex
+				flex-direction: row
+				margin-bottom: 20px
+				gap: 20px
+				&.row-reverse-mobile
+					flex-direction: row-reverse
+	&--differentials
+		.differentials-wrap
+			max-width: 303px
+			margin: auto
+			.ornament
+				position: relative
+				@media (min-width: 40rem)
 					&:before
 						content: ""
-						background-image: url('../images/pin.png')
-						background-repeat: no-repeat
+						background:
+							image: url('../images/ornament.png')
+							repeat: no-repeat
 						display: block
-						width: 49px
-						height: 84px
+						width: 55px
+						height: 97px
 						position: absolute
-						top: -126px
-						left: 50%
-						margin-left: -24px
-						@media (max-width: 40rem)
-							content: none
-					span
-						position: absolute
-						left: 5px
-						top: -70px
-						color: $blue
-						font-family: 'amsipro-black'
-						font-size: 152px
-						@media (max-width: 40rem)
-							font-size: 56px
-							top: -26px
-					@media (max-width: 40rem)
-						flex: none
-						width: 49px
-						height: 49px
-						margin-bottom: initial
-						margin-right: 18px
-				.title--how-it-works
-					font-size: 24px
-					margin-bottom: 0
-					@media (min-width: 40rem)
-						font-size: 32px
-						text-align: center
-						margin-bottom: 37px
-				.paragraph
-					font-size: 16px
-					@media (min-width: 40rem)
-						text-align: center
-			.topics-wrapper
-				display: flex
-				justify-content: space-between
-				@media (max-width: 40rem)
-					flex-direction: column
-			.title-align-wrap
-				height: 88px
-				display: flex
-				align-items: flex-end
-				@media (min-width: 40rem)
-					justify-content: center
-		&--why-purchase
-			.cards-spacing
-				margin: 40px 0
-			.card
-				background-color: $blue
-				border-radius: 14px
-				display: flex
-				flex-direction: row
-				align-items: center
-				justify-content: center
-				height: 200px
-				.percentage
-					color: $orange
-					font-family: 'amsipro-black'
-					font-size: 63px
-					margin-right: 9px
-				.card-text
-					font-family: 'amsipro-black'
-					font-size: 21px
-					line-height: 1.1
-					color: white
-					max-width: 200px
-			.disclaimer
-				display: block
-				font-size: 12px
-				color: $gray
-			.stats-wrapper
-				padding: 40px 0
-				.percentage
-					font-family: 'amsipro-black'
-					font-size: 110px
-					color: $orange
-					line-height: 1
-					position: relative
-					&:after
-						content: "%"
-						display: block
-						position: absolute
-						top: 28px
-						right: -50px
-						font-family: 'amsipro-black'
-						font-size: calc(110px - 50%)
-						color: $orange
-					&--small
-						font-size: 70px
-						&:after
-							top: 18px
-							right: -35px
-							font-size: calc(70px - 50%)
-				.stats-text
-					font-family: 'amsipro-black'
-					font-size: 21px
-					color: $blue
-			.ampersand
-				font-family: 'amsipro-black'
-				font-size: 90px
-				color: $gray
-				line-height: 0.9
-				padding: 40px 0
-				margin: 0 32px
+					&--left:before
+						top: 0
+						left: -65px
+					&--right:before
+						bottom: 0
+						right: -75px
+						transform: rotate(180deg)
 			@media (max-width: 40rem)
-				.card
-					padding: 25px
-					.percentage
-						font-size: 50px
-					.card-text
-						font-size: 16px
-						max-width: 165px
-				.align-bottom
-					justify-content: center
-				.stats-wrapper
-					.percentage
-						font-size: 78px
-						&:after
-							top: 18px
-							right: -38px
-							font-size: calc(78px - 50%)
-						&--small
-							font-size: 40px
-							&:after
-								top: 8px
-								right: -20px
-								font-size: calc(40px - 50%)
-					.stats-text
-						font-size: 14px
-				.ampersand
-					font-size: 64px
-				.text-center-mobile
-					font-size: 12px
-		&--highlighted
-			background-color: $orange
-			color: white
-			.btn
-				box-shadow: $shadow
-				margin-top: 60px
-			.disclaimer
-				display: block
-				font-size: 12px
-			.sec-highlighted-content-space
-				margin: 70px 0 30px
-			.sec-highlighted--title
+				figure
+					margin: auto
+					width: 126px
+		.title--differentials
+			font-family: 'amsipro-black'
+			font-size: 21px
+			line-height: 1.1
+			color: $orange
+			margin: 20px 0
+	&--benefits
+		.sec-subheading
+			font-family: 'amsipro-black'
+			font-size: 21px
+			line-height: 1.2
+			color: $orange
+			margin-bottom: 25px
+			span
+				color: #2C2C2C
+		.sec-benefits-list
+			margin: 0
+			li
+				list-style: none
 				font-family: 'amsipro-black'
 				font-size: 24px
-				line-height: 1.1
-				color: $blue
-			.sec-highlighted--description
-				line-height: 1.2
-				max-width: 287px
-			.flex
-				flex-wrap: nowrap
-				align-items: center
-				&.outer-flex
-					flex-direction: column
-					gap: 28px
-				&.inner-flex
-					gap: 24px
-			@media (max-width: 40rem)
-				.sec-highlighted--title
-					display: none
-				.sec-highlighted--description
-					font-family: 'amsipro-black'
-					font-size: 12px
-					max-width: 225px
-				img
-					width: 65px
-				.flex.outer-flex
-					flex-direction: row
-					margin-bottom: 20px
-					gap: 20px
-					&.row-reverse-mobile
-						flex-direction: row-reverse
-		&--differentials
-			.differentials-wrap
-				max-width: 303px
-				margin: auto
-				.ornament
-					position: relative
-					@media (min-width: 40rem)
-						&:before
-							content: ""
-							background:
-								image: url('../images/ornament.png')
-								repeat: no-repeat
-							display: block
-							width: 55px
-							height: 97px
-							position: absolute
-						&--left:before
-							top: 0
-							left: -65px
-						&--right:before
-							bottom: 0
-							right: -75px
-							transform: rotate(180deg)
-				@media (max-width: 40rem)
-					figure
-						margin: auto
-						width: 126px
-			.title--differentials
-				font-family: 'amsipro-black'
-				font-size: 21px
-				line-height: 1.1
-				color: $orange
-				margin: 20px 0
+				color: $gray
+				margin-bottom: 30px
+				padding-left: 40px
+				position: relative
+				&.highlight
+					color: $orange
+				&:before
+					content: ""
+					display: block
+					background-image: url('../images/arrow-right.svg')
+					background-repeat: no-repeat
+					background-size: contain
+					width: 32px
+					height: 14px
+					position: absolute
+					left: 0
+					top: 12px
+		.paragraph
+			margin-bottom: 45px
+	&--apps
+		padding-bottom: 0
+		.grid-container
+			background-image: url('../images/rembly-apps.png')
+			background-repeat: no-repeat
+			background-position: bottom right
+			height: 612px
+		.title
+			font-size: 65px
+			line-height: 1
+			margin-bottom: 25px
+		.flex
+			gap: 10px
+			margin: 45px 0

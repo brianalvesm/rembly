@@ -239,15 +239,15 @@ body .grid-container {
   max-width: 81rem;
 }
 
-.front-page .sec {
+.sec {
   padding: 50px 0;
 }
 @media (max-width: 40rem) {
-  .front-page .sec {
+  .sec {
     padding: 25px 0;
   }
 }
-.front-page .sec--hero {
+.sec--hero {
   padding-top: 100px;
   display: flex;
   background-image: url(" ");
@@ -256,87 +256,87 @@ body .grid-container {
   background-color: #2121A5;
   color: white;
 }
-.front-page .sec--hero .heading {
+.sec--hero .heading {
   font-family: "amsipro-black";
   font-size: 52px;
   line-height: 1.1;
 }
 @media (max-width: 40rem) {
-  .front-page .sec--hero .heading {
+  .sec--hero .heading {
     font-size: 28px;
   }
 }
-.front-page .sec--hero .subheading {
+.sec--hero .subheading {
   font-size: 21px;
   max-width: 453px;
   margin: 45px 0 60px;
 }
-.front-page .sec--hero .hero-img {
+.sec--hero .hero-img {
   position: relative;
   bottom: 0;
 }
 @media (min-width: 40rem) {
-  .front-page .sec--hero {
+  .sec--hero {
     height: 768px;
   }
 }
 @media (max-width: 40rem) {
-  .front-page .sec--hero {
+  .sec--hero {
     height: 440px;
   }
-  .front-page .sec--hero .heading {
+  .sec--hero .heading {
     font-size: 26px;
     line-height: 1.4;
     text-align: center;
     margin-top: 30px;
   }
-  .front-page .sec--hero .subheading {
+  .sec--hero .subheading {
     font-size: 20px;
     line-height: 1.4;
   }
-  .front-page .sec--hero .hero-img {
+  .sec--hero .hero-img {
     max-width: 340px;
   }
 }
-.front-page .sec--posthero .subheading {
+.sec--posthero .subheading {
   font-size: 12px;
   max-width: 265px;
 }
-.front-page .sec--posthero .btn {
+.sec--posthero .btn {
   margin: 30px 0;
 }
 @media (max-width: 40rem) {
-  .front-page .sec--posthero {
+  .sec--posthero {
     padding-top: 240px;
   }
-  .front-page .sec--posthero .paragraph {
+  .sec--posthero .paragraph {
     font-size: 12px;
   }
 }
-.front-page .sec--how-it-works .title {
+.sec--how-it-works .title {
   margin-bottom: 175px;
 }
 @media (max-width: 40rem) {
-  .front-page .sec--how-it-works .title {
+  .sec--how-it-works .title {
     margin-bottom: 0;
   }
 }
-.front-page .sec--how-it-works .btn {
+.sec--how-it-works .btn {
   margin-top: 70px;
 }
-.front-page .sec--how-it-works .how-it-works-topics {
+.sec--how-it-works .how-it-works-topics {
   display: flex;
   flex-direction: column;
   width: 284px;
   align-items: center;
 }
 @media (max-width: 40rem) {
-  .front-page .sec--how-it-works .how-it-works-topics {
+  .sec--how-it-works .how-it-works-topics {
     flex-direction: row;
     width: 100%;
   }
 }
-.front-page .sec--how-it-works .how-it-works-topics .topic-numbers {
+.sec--how-it-works .how-it-works-topics .topic-numbers {
   display: block;
   width: 132px;
   height: 132px;
@@ -345,7 +345,7 @@ body .grid-container {
   position: relative;
   margin-bottom: 60px;
 }
-.front-page .sec--how-it-works .how-it-works-topics .topic-numbers:before {
+.sec--how-it-works .how-it-works-topics .topic-numbers:before {
   content: "";
   background-image: url("../images/pin.png");
   background-repeat: no-repeat;
@@ -358,11 +358,11 @@ body .grid-container {
   margin-left: -24px;
 }
 @media (max-width: 40rem) {
-  .front-page .sec--how-it-works .how-it-works-topics .topic-numbers:before {
+  .sec--how-it-works .how-it-works-topics .topic-numbers:before {
     content: none;
   }
 }
-.front-page .sec--how-it-works .how-it-works-topics .topic-numbers span {
+.sec--how-it-works .how-it-works-topics .topic-numbers span {
   position: absolute;
   left: 5px;
   top: -70px;
@@ -371,13 +371,13 @@ body .grid-container {
   font-size: 152px;
 }
 @media (max-width: 40rem) {
-  .front-page .sec--how-it-works .how-it-works-topics .topic-numbers span {
+  .sec--how-it-works .how-it-works-topics .topic-numbers span {
     font-size: 56px;
     top: -26px;
   }
 }
 @media (max-width: 40rem) {
-  .front-page .sec--how-it-works .how-it-works-topics .topic-numbers {
+  .sec--how-it-works .how-it-works-topics .topic-numbers {
     flex: none;
     width: 49px;
     height: 49px;
@@ -385,48 +385,48 @@ body .grid-container {
     margin-right: 18px;
   }
 }
-.front-page .sec--how-it-works .how-it-works-topics .title--how-it-works {
+.sec--how-it-works .how-it-works-topics .title--how-it-works {
   font-size: 24px;
   margin-bottom: 0;
 }
 @media (min-width: 40rem) {
-  .front-page .sec--how-it-works .how-it-works-topics .title--how-it-works {
+  .sec--how-it-works .how-it-works-topics .title--how-it-works {
     font-size: 32px;
     text-align: center;
     margin-bottom: 37px;
   }
 }
-.front-page .sec--how-it-works .how-it-works-topics .paragraph {
+.sec--how-it-works .how-it-works-topics .paragraph {
   font-size: 16px;
 }
 @media (min-width: 40rem) {
-  .front-page .sec--how-it-works .how-it-works-topics .paragraph {
+  .sec--how-it-works .how-it-works-topics .paragraph {
     text-align: center;
   }
 }
-.front-page .sec--how-it-works .topics-wrapper {
+.sec--how-it-works .topics-wrapper {
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 40rem) {
-  .front-page .sec--how-it-works .topics-wrapper {
+  .sec--how-it-works .topics-wrapper {
     flex-direction: column;
   }
 }
-.front-page .sec--how-it-works .title-align-wrap {
+.sec--how-it-works .title-align-wrap {
   height: 88px;
   display: flex;
   align-items: flex-end;
 }
 @media (min-width: 40rem) {
-  .front-page .sec--how-it-works .title-align-wrap {
+  .sec--how-it-works .title-align-wrap {
     justify-content: center;
   }
 }
-.front-page .sec--why-purchase .cards-spacing {
+.sec--why-purchase .cards-spacing {
   margin: 40px 0;
 }
-.front-page .sec--why-purchase .card {
+.sec--why-purchase .card {
   background-color: #2121A5;
   border-radius: 14px;
   display: flex;
@@ -435,35 +435,35 @@ body .grid-container {
   justify-content: center;
   height: 200px;
 }
-.front-page .sec--why-purchase .card .percentage {
+.sec--why-purchase .card .percentage {
   color: #FD8B26;
   font-family: "amsipro-black";
   font-size: 63px;
   margin-right: 9px;
 }
-.front-page .sec--why-purchase .card .card-text {
+.sec--why-purchase .card .card-text {
   font-family: "amsipro-black";
   font-size: 21px;
   line-height: 1.1;
   color: white;
   max-width: 200px;
 }
-.front-page .sec--why-purchase .disclaimer {
+.sec--why-purchase .disclaimer {
   display: block;
   font-size: 12px;
   color: #B7B7B7;
 }
-.front-page .sec--why-purchase .stats-wrapper {
+.sec--why-purchase .stats-wrapper {
   padding: 40px 0;
 }
-.front-page .sec--why-purchase .stats-wrapper .percentage {
+.sec--why-purchase .stats-wrapper .percentage {
   font-family: "amsipro-black";
   font-size: 110px;
   color: #FD8B26;
   line-height: 1;
   position: relative;
 }
-.front-page .sec--why-purchase .stats-wrapper .percentage:after {
+.sec--why-purchase .stats-wrapper .percentage:after {
   content: "%";
   display: block;
   position: absolute;
@@ -473,20 +473,20 @@ body .grid-container {
   font-size: calc(110px - 50%);
   color: #FD8B26;
 }
-.front-page .sec--why-purchase .stats-wrapper .percentage--small {
+.sec--why-purchase .stats-wrapper .percentage--small {
   font-size: 70px;
 }
-.front-page .sec--why-purchase .stats-wrapper .percentage--small:after {
+.sec--why-purchase .stats-wrapper .percentage--small:after {
   top: 18px;
   right: -35px;
   font-size: calc(70px - 50%);
 }
-.front-page .sec--why-purchase .stats-wrapper .stats-text {
+.sec--why-purchase .stats-wrapper .stats-text {
   font-family: "amsipro-black";
   font-size: 21px;
   color: #2121A5;
 }
-.front-page .sec--why-purchase .ampersand {
+.sec--why-purchase .ampersand {
   font-family: "amsipro-black";
   font-size: 90px;
   color: #B7B7B7;
@@ -495,111 +495,111 @@ body .grid-container {
   margin: 0 32px;
 }
 @media (max-width: 40rem) {
-  .front-page .sec--why-purchase .card {
+  .sec--why-purchase .card {
     padding: 25px;
   }
-  .front-page .sec--why-purchase .card .percentage {
+  .sec--why-purchase .card .percentage {
     font-size: 50px;
   }
-  .front-page .sec--why-purchase .card .card-text {
+  .sec--why-purchase .card .card-text {
     font-size: 16px;
     max-width: 165px;
   }
-  .front-page .sec--why-purchase .align-bottom {
+  .sec--why-purchase .align-bottom {
     justify-content: center;
   }
-  .front-page .sec--why-purchase .stats-wrapper .percentage {
+  .sec--why-purchase .stats-wrapper .percentage {
     font-size: 78px;
   }
-  .front-page .sec--why-purchase .stats-wrapper .percentage:after {
+  .sec--why-purchase .stats-wrapper .percentage:after {
     top: 18px;
     right: -38px;
     font-size: calc(78px - 50%);
   }
-  .front-page .sec--why-purchase .stats-wrapper .percentage--small {
+  .sec--why-purchase .stats-wrapper .percentage--small {
     font-size: 40px;
   }
-  .front-page .sec--why-purchase .stats-wrapper .percentage--small:after {
+  .sec--why-purchase .stats-wrapper .percentage--small:after {
     top: 8px;
     right: -20px;
     font-size: calc(40px - 50%);
   }
-  .front-page .sec--why-purchase .stats-wrapper .stats-text {
+  .sec--why-purchase .stats-wrapper .stats-text {
     font-size: 14px;
   }
-  .front-page .sec--why-purchase .ampersand {
+  .sec--why-purchase .ampersand {
     font-size: 64px;
   }
-  .front-page .sec--why-purchase .text-center-mobile {
+  .sec--why-purchase .text-center-mobile {
     font-size: 12px;
   }
 }
-.front-page .sec--highlighted {
+.sec--highlighted {
   background-color: #FD8B26;
   color: white;
 }
-.front-page .sec--highlighted .btn {
+.sec--highlighted .btn {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
   margin-top: 60px;
 }
-.front-page .sec--highlighted .disclaimer {
+.sec--highlighted .disclaimer {
   display: block;
   font-size: 12px;
 }
-.front-page .sec--highlighted .sec-highlighted-content-space {
+.sec--highlighted .sec-highlighted-content-space {
   margin: 70px 0 30px;
 }
-.front-page .sec--highlighted .sec-highlighted--title {
+.sec--highlighted .sec-highlighted--title {
   font-family: "amsipro-black";
   font-size: 24px;
   line-height: 1.1;
   color: #2121A5;
 }
-.front-page .sec--highlighted .sec-highlighted--description {
+.sec--highlighted .sec-highlighted--description {
   line-height: 1.2;
   max-width: 287px;
 }
-.front-page .sec--highlighted .flex {
+.sec--highlighted .flex {
   flex-wrap: nowrap;
   align-items: center;
 }
-.front-page .sec--highlighted .flex.outer-flex {
+.sec--highlighted .flex.outer-flex {
   flex-direction: column;
   gap: 28px;
 }
-.front-page .sec--highlighted .flex.inner-flex {
+.sec--highlighted .flex.inner-flex {
   gap: 24px;
 }
 @media (max-width: 40rem) {
-  .front-page .sec--highlighted .sec-highlighted--title {
+  .sec--highlighted .sec-highlighted--title {
     display: none;
   }
-  .front-page .sec--highlighted .sec-highlighted--description {
+  .sec--highlighted .sec-highlighted--description {
     font-family: "amsipro-black";
     font-size: 12px;
     max-width: 225px;
   }
-  .front-page .sec--highlighted img {
+  .sec--highlighted img {
     width: 65px;
   }
-  .front-page .sec--highlighted .flex.outer-flex {
+  .sec--highlighted .flex.outer-flex {
     flex-direction: row;
     margin-bottom: 20px;
     gap: 20px;
   }
-  .front-page .sec--highlighted .flex.outer-flex.row-reverse-mobile {
+  .sec--highlighted .flex.outer-flex.row-reverse-mobile {
     flex-direction: row-reverse;
   }
 }
-.front-page .sec--differentials .differentials-wrap {
+.sec--differentials .differentials-wrap {
   max-width: 303px;
   margin: auto;
 }
-.front-page .sec--differentials .differentials-wrap .ornament {
+.sec--differentials .differentials-wrap .ornament {
   position: relative;
 }
 @media (min-width: 40rem) {
-  .front-page .sec--differentials .differentials-wrap .ornament:before {
+  .sec--differentials .differentials-wrap .ornament:before {
     content: "";
     background-image: url("../images/ornament.png");
     background-repeat: no-repeat;
@@ -608,26 +608,84 @@ body .grid-container {
     height: 97px;
     position: absolute;
   }
-  .front-page .sec--differentials .differentials-wrap .ornament--left:before {
+  .sec--differentials .differentials-wrap .ornament--left:before {
     top: 0;
     left: -65px;
   }
-  .front-page .sec--differentials .differentials-wrap .ornament--right:before {
+  .sec--differentials .differentials-wrap .ornament--right:before {
     bottom: 0;
     right: -75px;
     transform: rotate(180deg);
   }
 }
 @media (max-width: 40rem) {
-  .front-page .sec--differentials .differentials-wrap figure {
+  .sec--differentials .differentials-wrap figure {
     margin: auto;
     width: 126px;
   }
 }
-.front-page .sec--differentials .title--differentials {
+.sec--differentials .title--differentials {
   font-family: "amsipro-black";
   font-size: 21px;
   line-height: 1.1;
   color: #FD8B26;
   margin: 20px 0;
+}
+.sec--benefits .sec-subheading {
+  font-family: "amsipro-black";
+  font-size: 21px;
+  line-height: 1.2;
+  color: #FD8B26;
+  margin-bottom: 25px;
+}
+.sec--benefits .sec-subheading span {
+  color: #2C2C2C;
+}
+.sec--benefits .sec-benefits-list {
+  margin: 0;
+}
+.sec--benefits .sec-benefits-list li {
+  list-style: none;
+  font-family: "amsipro-black";
+  font-size: 24px;
+  color: #B7B7B7;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  position: relative;
+}
+.sec--benefits .sec-benefits-list li.highlight {
+  color: #FD8B26;
+}
+.sec--benefits .sec-benefits-list li:before {
+  content: "";
+  display: block;
+  background-image: url("../images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+.sec--benefits .paragraph {
+  margin-bottom: 45px;
+}
+.sec--apps {
+  padding-bottom: 0;
+}
+.sec--apps .grid-container {
+  background-image: url("../images/rembly-apps.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  height: 612px;
+}
+.sec--apps .title {
+  font-size: 65px;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+.sec--apps .flex {
+  gap: 10px;
+  margin: 45px 0;
 }
