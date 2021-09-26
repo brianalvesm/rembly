@@ -671,6 +671,19 @@ body .grid-container {
 .sec--benefits .paragraph {
   margin-bottom: 45px;
 }
+@media (max-width: 40rem) {
+  .sec--benefits .sec-benefits-list li {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .sec--benefits .sec-benefits-list li:before {
+    top: 5px;
+  }
+  .sec--benefits .paragraph {
+    font-size: 12px;
+  }
+}
 .sec--apps {
   padding-bottom: 0;
 }
@@ -688,4 +701,23 @@ body .grid-container {
 .sec--apps .flex {
   gap: 10px;
   margin: 45px 0;
+}
+@media (max-width: 40rem) {
+  .sec--apps .grid-container {
+    background-image: url("../images/rembly-apps-mobile.png");
+    height: 350px;
+  }
+  .sec--apps .title {
+    font-size: 24px;
+  }
+  .sec--apps .paragraph {
+    font-size: 12px;
+  }
+  .sec--apps .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sec--apps .flex img {
+    width: 152px;
+  }
 }
