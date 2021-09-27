@@ -103,6 +103,13 @@ footer
 		background-color: rgba(white, 0.1)
 		.flex
 			height: 50px
+	.hide-for-small-only
+		div
+			margin-bottom: 10px
+		img
+			margin-right: 8px
+		span + img
+			margin-left: 18px
 	@media (max-width: 40rem)
 		.footer-description
 			margin-left: 0
@@ -117,3 +124,27 @@ footer
 			height: initial
 			font-size: 10px
 			justify-content: center
+		.footer-bottom .flex
+			flex-direction: row-reverse
+			gap: 20px
+		.copyright-disclaimer
+			margin-bottom: 10px
+		.show-for-small-only
+			.title
+				font-family: 'amsipro-black'
+				font-size: 14px
+				margin-bottom: 10px
+			.footer-icons-nav
+				display: flex
+				gap: 10px
+				margin-bottom: 25px
+				a
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 45px
+					height: 45px
+					border-radius: 25px
+					background-color: $orange
+					&:last-child
+						background-color: $green
