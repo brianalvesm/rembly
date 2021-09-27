@@ -236,6 +236,9 @@ footer .hide-for-small-only span + img {
 .highlight {
   color: #FD8B26;
 }
+.highlight:focus, .highlight:hover {
+  color: #FD8B26;
+}
 
 .text-center {
   text-align: center;
@@ -278,6 +281,9 @@ body {
 }
 body .grid-container {
   max-width: 81rem;
+}
+body a:hover, body a:focus {
+  text-decoration: underline;
 }
 
 .sec {
@@ -731,7 +737,7 @@ body .grid-container {
 .sec--apps .grid-container {
   background-image: url("../images/rembly-apps.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: right bottom;
   height: 612px;
 }
 .sec--apps .title {
@@ -746,7 +752,8 @@ body .grid-container {
 @media (max-width: 40rem) {
   .sec--apps .grid-container {
     background-image: url("../images/rembly-apps-mobile.png");
-    height: 350px;
+    background-position: right bottom -20px;
+    height: 440px;
   }
   .sec--apps .title {
     font-size: 24px;

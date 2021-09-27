@@ -12,6 +12,9 @@
 
 .highlight
 	color: $orange
+	&:focus,
+	&:hover
+		color: $orange
 
 .text-center
 	text-align: center
@@ -45,6 +48,8 @@ body
 	color: #2C2C2C
 	.grid-container
 		max-width: 81rem
+	a:hover, a:focus
+		text-decoration: underline
 
 // Sections
 .sec
@@ -384,7 +389,7 @@ body
 		.grid-container
 			background-image: url('../images/rembly-apps.png')
 			background-repeat: no-repeat
-			background-position: bottom right
+			background-position: right bottom
 			height: 612px
 		.title
 			font-size: 65px
@@ -396,7 +401,8 @@ body
 		@media (max-width: 40rem)
 			.grid-container
 				background-image: url('../images/rembly-apps-mobile.png')
-				height: 350px
+				background-position: right bottom -20px
+				height: 440px
 			.title
 				font-size: 24px
 			.paragraph
