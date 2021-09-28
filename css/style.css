@@ -64,6 +64,12 @@
   }
 }
 
+@media (max-width: 40rem) {
+  p.paragraph {
+    font-size: 12px;
+  }
+}
+
 header {
   background-color: transparent;
   width: 100%;
@@ -168,13 +174,16 @@ footer .footer-bottom {
 footer .footer-bottom .flex {
   height: 50px;
 }
-footer .hide-for-small-only div {
+footer .social-desktop div {
   margin-bottom: 10px;
 }
-footer .hide-for-small-only img {
-  margin-right: 8px;
+footer .social-desktop i {
+  margin-right: 6px;
 }
-footer .hide-for-small-only span + img {
+footer .social-desktop i:before {
+  font-size: 16px;
+}
+footer .social-desktop .margin-left {
   margin-left: 18px;
 }
 @media (max-width: 40rem) {
@@ -222,6 +231,10 @@ footer .hide-for-small-only span + img {
   }
   footer .show-for-small-only .footer-icons-nav a:last-child {
     background-color: #4BC789;
+  }
+  footer .show-for-small-only .footer-icons-nav a i:before {
+    color: white;
+    font-size: 20px;
   }
 }
 
@@ -289,11 +302,6 @@ body a:hover, body a:focus {
 .sec {
   padding: 50px 0;
 }
-@media (max-width: 40rem) {
-  .sec {
-    padding: 25px 0;
-  }
-}
 .sec--hero {
   padding-top: 100px;
   display: flex;
@@ -356,16 +364,13 @@ body a:hover, body a:focus {
   .sec--posthero {
     padding-top: 240px;
   }
-  .sec--posthero .paragraph {
-    font-size: 12px;
-  }
 }
 .sec--how-it-works .title {
   margin-bottom: 175px;
 }
 @media (max-width: 40rem) {
   .sec--how-it-works .title {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 .sec--how-it-works .btn {
@@ -379,6 +384,7 @@ body a:hover, body a:focus {
 }
 @media (max-width: 40rem) {
   .sec--how-it-works .how-it-works-topics {
+    margin: 15px auto;
     flex-direction: row;
     width: 100%;
   }
@@ -391,6 +397,7 @@ body a:hover, body a:focus {
   background-color: #FD8B26;
   position: relative;
   margin-bottom: 60px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
 }
 .sec--how-it-works .how-it-works-topics .topic-numbers:before {
   content: "";
@@ -443,9 +450,6 @@ body a:hover, body a:focus {
     margin-bottom: 37px;
   }
 }
-.sec--how-it-works .how-it-works-topics .paragraph {
-  font-size: 16px;
-}
 @media (min-width: 40rem) {
   .sec--how-it-works .how-it-works-topics .paragraph {
     text-align: center;
@@ -468,6 +472,16 @@ body a:hover, body a:focus {
 @media (min-width: 40rem) {
   .sec--how-it-works .title-align-wrap {
     justify-content: center;
+  }
+}
+@media (max-width: 40rem) {
+  .sec--how-it-works .title-align-wrap {
+    height: initial;
+  }
+}
+@media (max-width: 40rem) {
+  .sec--how-it-works {
+    padding-top: 0;
   }
 }
 .sec--why-purchase .cards-spacing {
@@ -555,6 +569,14 @@ body a:hover, body a:focus {
   .sec--why-purchase .align-bottom {
     justify-content: center;
   }
+  .sec--why-purchase .disclaimer {
+    font-size: 10px;
+    max-width: 245px;
+    margin: auto;
+  }
+  .sec--why-purchase .stats-wrapper {
+    padding: 40px 0 20px;
+  }
   .sec--why-purchase .stats-wrapper .percentage {
     font-size: 78px;
   }
@@ -576,6 +598,7 @@ body a:hover, body a:focus {
   }
   .sec--why-purchase .ampersand {
     font-size: 64px;
+    padding: 40px 0 20px;
   }
   .sec--why-purchase .text-center-mobile {
     font-size: 12px;
@@ -629,6 +652,14 @@ body a:hover, body a:focus {
   .sec--highlighted img {
     width: 65px;
   }
+  .sec--highlighted .disclaimer {
+    font-size: 10px;
+    max-width: 245px;
+    margin: auto;
+  }
+  .sec--highlighted .sec-highlighted-content-space {
+    margin: 40px auto;
+  }
   .sec--highlighted .flex.outer-flex {
     flex-direction: row;
     margin-bottom: 20px;
@@ -666,8 +697,11 @@ body a:hover, body a:focus {
   }
 }
 @media (max-width: 40rem) {
+  .sec--differentials {
+    padding-top: 100px;
+  }
   .sec--differentials .differentials-wrap figure {
-    margin: auto;
+    margin: 50px auto 0;
     width: 126px;
   }
 }
@@ -677,6 +711,11 @@ body a:hover, body a:focus {
   line-height: 1.1;
   color: #FD8B26;
   margin: 20px 0;
+}
+@media (max-width: 40rem) {
+  .sec--differentials .title--differentials {
+    margin: 18px auto 13px;
+  }
 }
 .sec--benefits .sec-subheading {
   font-family: "amsipro-black";
@@ -716,9 +755,19 @@ body a:hover, body a:focus {
   top: 12px;
 }
 .sec--benefits .paragraph {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 @media (max-width: 40rem) {
+  .sec--benefits .sec-subheading {
+    font-size: 16px;
+  }
+  .sec--benefits .sec-subheading span {
+    color: #FD8B26;
+  }
+  .sec--benefits .sec-benefits-list {
+    margin: 0 auto 20px;
+    max-width: 275px;
+  }
   .sec--benefits .sec-benefits-list li {
     text-align: left;
     font-size: 16px;
@@ -727,8 +776,8 @@ body a:hover, body a:focus {
   .sec--benefits .sec-benefits-list li:before {
     top: 5px;
   }
-  .sec--benefits .paragraph {
-    font-size: 12px;
+  .sec--benefits .title {
+    margin: 35px auto 20px;
   }
 }
 .sec--apps {
@@ -757,9 +806,6 @@ body a:hover, body a:focus {
   }
   .sec--apps .title {
     font-size: 24px;
-  }
-  .sec--apps .paragraph {
-    font-size: 12px;
   }
   .sec--apps .flex {
     flex-direction: column;

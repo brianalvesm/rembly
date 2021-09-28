@@ -54,8 +54,6 @@ body
 // Sections
 .sec
 	padding: 50px 0
-	@media (max-width: 40rem)
-		padding: 25px 0
 	&--hero
 		padding-top: 100px
 		display: flex
@@ -100,13 +98,11 @@ body
 			margin: 30px 0
 		@media (max-width: 40rem)
 			padding-top: 240px
-			.paragraph
-				font-size: 12px
 	&--how-it-works
 		.title
 			margin-bottom: 175px
 			@media (max-width: 40rem)
-				margin-bottom: 0
+				margin-bottom: 30px
 		.btn
 			margin-top: 70px
 		.how-it-works-topics
@@ -115,6 +111,7 @@ body
 			width: 284px
 			align-items: center
 			@media (max-width: 40rem)
+				margin: 15px auto
 				flex-direction: row
 				width: 100%
 			.topic-numbers
@@ -125,6 +122,7 @@ body
 				background-color: $orange
 				position: relative
 				margin-bottom: 60px
+				box-shadow: 0 5px 10px rgba(black, 0.16)
 				&:before
 					content: ""
 					background-image: url('../images/pin.png')
@@ -162,7 +160,6 @@ body
 					text-align: center
 					margin-bottom: 37px
 			.paragraph
-				font-size: 16px
 				@media (min-width: 40rem)
 					text-align: center
 		.topics-wrapper
@@ -176,6 +173,10 @@ body
 			align-items: flex-end
 			@media (min-width: 40rem)
 				justify-content: center
+			@media (max-width: 40rem)
+				height: initial
+		@media (max-width: 40rem)
+			padding-top: 0
 	&--why-purchase
 		.cards-spacing
 			margin: 40px 0
@@ -246,7 +247,12 @@ body
 					max-width: 165px
 			.align-bottom
 				justify-content: center
+			.disclaimer
+				font-size: 10px
+				max-width: 245px
+				margin: auto
 			.stats-wrapper
+				padding: 40px 0 20px
 				.percentage
 					font-size: 78px
 					&:after
@@ -263,6 +269,7 @@ body
 					font-size: 14px
 			.ampersand
 				font-size: 64px
+				padding: 40px 0 20px
 			.text-center-mobile
 				font-size: 12px
 	&--highlighted
@@ -301,6 +308,12 @@ body
 				max-width: 225px
 			img
 				width: 65px
+			.disclaimer
+				font-size: 10px
+				max-width: 245px
+				margin: auto
+			.sec-highlighted-content-space
+				margin: 40px auto
 			.flex.outer-flex
 				flex-direction: row
 				margin-bottom: 20px
@@ -330,9 +343,11 @@ body
 						bottom: 0
 						right: -75px
 						transform: rotate(180deg)
-			@media (max-width: 40rem)
+		@media (max-width: 40rem)
+			padding-top: 100px
+			.differentials-wrap
 				figure
-					margin: auto
+					margin: 50px auto 0
 					width: 126px
 		.title--differentials
 			font-family: 'amsipro-black'
@@ -340,6 +355,8 @@ body
 			line-height: 1.1
 			color: $orange
 			margin: 20px 0
+			@media (max-width: 40rem)
+				margin: 18px auto 13px
 	&--benefits
 		.sec-subheading
 			font-family: 'amsipro-black'
@@ -373,17 +390,23 @@ body
 					left: 0
 					top: 12px
 		.paragraph
-			margin-bottom: 45px
+			margin-bottom: 40px
 		@media (max-width: 40rem)
+			.sec-subheading
+				font-size: 16px
+				span
+					color: $orange
 			.sec-benefits-list
+				margin: 0 auto 20px
+				max-width: 275px
 				li
 					text-align: left
 					font-size: 16px
 					margin-bottom: 10px
 					&:before
 						top: 5px
-			.paragraph
-				font-size: 12px
+			.title
+				margin: 35px auto 20px
 	&--apps
 		padding-bottom: 0
 		.grid-container
@@ -405,8 +428,6 @@ body
 				height: 440px
 			.title
 				font-size: 24px
-			.paragraph
-				font-size: 12px
 			.flex
 				flex-direction: column
 				align-items: flex-start
