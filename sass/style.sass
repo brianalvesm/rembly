@@ -33,6 +33,17 @@
 .show-for-small-only
 	display: none
 
+.switch-mobile img
+	&:first-child
+		display: block
+	&:last-child
+		display: none
+	@media print, screen and (max-width: 40em)
+		&:first-child
+			display: none
+		&:last-child
+			display: block
+
 @media print, screen and (max-width: 39.99875em)
 	.hide-for-small-only
 		display: none
@@ -100,12 +111,15 @@ body
 		@media (max-width: 40rem)
 			padding-top: 240px
 	&--how-it-works
+		padding: 0
 		.title
 			margin-bottom: 175px
 			@media (max-width: 40rem)
 				margin-bottom: 30px
 		.btn
-			margin-top: 70px
+			margin-top: 55px
+			@media (max-width: 40rem)
+				margin-top: 20px
 		.how-it-works-topics
 			display: flex
 			flex-direction: column
@@ -177,8 +191,18 @@ body
 				justify-content: center
 			@media (max-width: 40rem)
 				height: initial
-		@media (max-width: 40rem)
-			padding-top: 0
+		.how-it-works-features
+			margin-top: 36px
+			list-style: none
+			li
+				margin-bottom: 20px
+				&:before
+					content: "\2022"
+					color: $orange
+					font-weight: bold
+					display: inline-block
+					width: 16px
+					margin-left: -1em
 		&.about--variation
 			.how-it-works-topics
 				.title--how-it-works
@@ -296,7 +320,7 @@ body
 			display: block
 			font-size: 12px
 		.sec-highlighted-content-space
-			margin: 70px 0 30px
+			margin: 55px 0 30px
 		.sec-highlighted--title
 			font-family: 'amsipro-black'
 			font-size: 24px
@@ -358,7 +382,7 @@ body
 						right: -75px
 						transform: rotate(180deg)
 		@media (max-width: 40rem)
-			padding-top: 100px
+			padding: 100px 0 0
 			.differentials-wrap
 				figure
 					margin: 50px auto 0

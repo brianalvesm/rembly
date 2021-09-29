@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "amsipro-regular";
   src: url("../fonts/amsipro-webfont.woff2") format("woff2"), url("../fonts/amsipro-webfont.woff") format("woff");
@@ -345,6 +346,21 @@ footer .social-desktop .margin-left {
   display: none;
 }
 
+.switch-mobile img:first-child {
+  display: block;
+}
+.switch-mobile img:last-child {
+  display: none;
+}
+@media print, screen and (max-width: 40em) {
+  .switch-mobile img:first-child {
+    display: none;
+  }
+  .switch-mobile img:last-child {
+    display: block;
+  }
+}
+
 @media print, screen and (max-width: 39.99875em) {
   .hide-for-small-only {
     display: none;
@@ -435,6 +451,9 @@ body a:hover, body a:focus {
     padding-top: 240px;
   }
 }
+.sec--how-it-works {
+  padding: 0;
+}
 .sec--how-it-works .title {
   margin-bottom: 175px;
 }
@@ -444,7 +463,12 @@ body a:hover, body a:focus {
   }
 }
 .sec--how-it-works .btn {
-  margin-top: 70px;
+  margin-top: 55px;
+}
+@media (max-width: 40rem) {
+  .sec--how-it-works .btn {
+    margin-top: 20px;
+  }
 }
 .sec--how-it-works .how-it-works-topics {
   display: flex;
@@ -550,10 +574,20 @@ body a:hover, body a:focus {
     height: initial;
   }
 }
-@media (max-width: 40rem) {
-  .sec--how-it-works {
-    padding-top: 0;
-  }
+.sec--how-it-works .how-it-works-features {
+  margin-top: 36px;
+  list-style: none;
+}
+.sec--how-it-works .how-it-works-features li {
+  margin-bottom: 20px;
+}
+.sec--how-it-works .how-it-works-features li:before {
+  content: "•";
+  color: #FD8B26;
+  font-weight: bold;
+  display: inline-block;
+  width: 16px;
+  margin-left: -1em;
 }
 @media (min-width: 40rem) {
   .sec--how-it-works.about--variation .how-it-works-topics .title--how-it-works {
@@ -702,7 +736,7 @@ body a:hover, body a:focus {
   font-size: 12px;
 }
 .sec--highlighted .sec-highlighted-content-space {
-  margin: 70px 0 30px;
+  margin: 55px 0 30px;
 }
 .sec--highlighted .sec-highlighted--title {
   font-family: "amsipro-black";
@@ -783,7 +817,7 @@ body a:hover, body a:focus {
 }
 @media (max-width: 40rem) {
   .sec--differentials {
-    padding-top: 100px;
+    padding: 100px 0 0;
   }
   .sec--differentials .differentials-wrap figure {
     margin: 50px auto 0;
