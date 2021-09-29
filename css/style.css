@@ -718,9 +718,16 @@ body a:hover, body a:focus {
   .sec--why-purchase .ampersand {
     font-size: 64px;
     padding: 40px 0 20px;
+    margin: 0 12px;
   }
   .sec--why-purchase .text-center-mobile {
     font-size: 12px;
+  }
+  .sec--why-purchase .border-mobile {
+    border: 1px solid #B7B7B7;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
   }
 }
 .sec--highlighted {
