@@ -498,7 +498,7 @@ body a:hover, body a:focus {
 }
 .sec--how-it-works .how-it-works-topics .topic-numbers:before {
   content: "";
-  background-image: url("../images/pin.png");
+  background-image: url("../images/pin.svg");
   background-repeat: no-repeat;
   display: block;
   width: 49px;
