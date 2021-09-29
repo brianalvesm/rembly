@@ -27,12 +27,12 @@ p.paragraph
 
 // Header
 .header
-	background-color: transparent
 	width: 100%
 	height: 100px
 	padding-top: 24px
 	position: fixed
 	z-index: 1
+	background-color: transparent
 	@include transition(400ms)
 	.logo-rembly.active
 		display: none
@@ -42,6 +42,8 @@ p.paragraph
 		color: white
 		&:hover
 			color: $orange
+		&.btn:hover
+			color: white
 	.mobile-wrap
 		width: 100%
 		display: flex
@@ -54,6 +56,8 @@ p.paragraph
 			background-color: rgba(white, 0.9)
 			nav a
 				color: $dark
+				&:hover
+					color: $orange
 				&.btn
 					color: white
 			.logo-rembly.not-active
@@ -107,6 +111,17 @@ p.paragraph
 			.menu-icon
 				position: absolute
 				left: 23px
+	&--style-b
+		background-color: white
+		box-shadow: 0 3px 20px rgba(black, 0.08)
+		nav a
+			color: $dark
+			&:hover
+				color: $orange
+			&.btn
+				color: white 
+				&:hover
+					color: white
 
 // Footer
 footer

@@ -155,6 +155,7 @@ body
 					margin-right: 18px
 			.title--how-it-works
 				font-size: 24px
+				line-height: 1
 				margin-bottom: 0
 				@media (min-width: 40rem)
 					font-size: 32px
@@ -178,6 +179,17 @@ body
 				height: initial
 		@media (max-width: 40rem)
 			padding-top: 0
+		&.about--variation
+			.how-it-works-topics
+				.title--how-it-works
+					@media (min-width: 40rem)
+						font-size: 21px
+						margin-bottom: 10px
+				.paragraph
+					font-size: 14px
+					padding: 0 10px
+				img
+					max-height: 200px 
 	&--why-purchase
 		.cards-spacing
 			margin: 40px 0
@@ -434,3 +446,10 @@ body
 				align-items: flex-start
 				img
 					width: 152px
+	&--about-hero
+		padding: 167px 0 100px
+		.paragraph
+			max-width: 646px
+			margin: 30px auto
+		.title.highlight
+			font-size: 24px

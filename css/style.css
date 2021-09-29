@@ -71,12 +71,12 @@
 }
 
 .header {
-  background-color: transparent;
   width: 100%;
   height: 100px;
   padding-top: 24px;
   position: fixed;
   z-index: 1;
+  background-color: transparent;
   -webkit-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
   -ms-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -93,6 +93,9 @@
 }
 .header nav a:hover {
   color: #FD8B26;
+}
+.header nav a.btn:hover {
+  color: white;
 }
 .header .mobile-wrap {
   width: 100%;
@@ -113,6 +116,9 @@
   }
   .header.active nav a {
     color: #2C2C2C;
+  }
+  .header.active nav a:hover {
+    color: #FD8B26;
   }
   .header.active nav a.btn {
     color: white;
@@ -184,6 +190,22 @@
     position: absolute;
     left: 23px;
   }
+}
+.header--style-b {
+  background-color: white;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+}
+.header--style-b nav a {
+  color: #2C2C2C;
+}
+.header--style-b nav a:hover {
+  color: #FD8B26;
+}
+.header--style-b nav a.btn {
+  color: white;
+}
+.header--style-b nav a.btn:hover {
+  color: white;
 }
 
 footer {
@@ -471,6 +493,7 @@ body a:hover, body a:focus {
 }
 .sec--how-it-works .how-it-works-topics .title--how-it-works {
   font-size: 24px;
+  line-height: 1;
   margin-bottom: 0;
 }
 @media (min-width: 40rem) {
@@ -513,6 +536,19 @@ body a:hover, body a:focus {
   .sec--how-it-works {
     padding-top: 0;
   }
+}
+@media (min-width: 40rem) {
+  .sec--how-it-works.about--variation .how-it-works-topics .title--how-it-works {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+}
+.sec--how-it-works.about--variation .how-it-works-topics .paragraph {
+  font-size: 14px;
+  padding: 0 10px;
+}
+.sec--how-it-works.about--variation .how-it-works-topics img {
+  max-height: 200px;
 }
 .sec--why-purchase .cards-spacing {
   margin: 40px 0;
@@ -844,4 +880,14 @@ body a:hover, body a:focus {
   .sec--apps .flex img {
     width: 152px;
   }
+}
+.sec--about-hero {
+  padding: 167px 0 100px;
+}
+.sec--about-hero .paragraph {
+  max-width: 646px;
+  margin: 30px auto;
+}
+.sec--about-hero .title.highlight {
+  font-size: 24px;
 }
