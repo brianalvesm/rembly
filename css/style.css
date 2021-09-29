@@ -53,6 +53,24 @@
   color: white;
 }
 
+.duration {
+  padding: 12px 40px;
+  border-radius: 25px;
+  background-color: #B7B7B7;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+  font-family: "amsipro-bold";
+  color: white;
+}
+.duration i {
+  margin-right: 10px;
+}
+.duration i:before {
+  color: #2C2C2C;
+}
+.duration .time {
+  color: #2121A5;
+}
+
 .title {
   font-family: "amsipro-black";
   font-size: 42px;
@@ -546,6 +564,7 @@ body a:hover, body a:focus {
 .sec--how-it-works.about--variation .how-it-works-topics .paragraph {
   font-size: 14px;
   padding: 0 10px;
+  height: 90px;
 }
 .sec--how-it-works.about--variation .how-it-works-topics img {
   max-height: 200px;
