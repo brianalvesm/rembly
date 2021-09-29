@@ -482,6 +482,9 @@ body a:hover, body a:focus {
     flex-direction: row;
     width: 100%;
   }
+  .sec--how-it-works .how-it-works-topics img {
+    display: none;
+  }
 }
 .sec--how-it-works .how-it-works-topics .topic-numbers {
   display: block;
