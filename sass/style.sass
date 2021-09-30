@@ -193,18 +193,8 @@ body
 				justify-content: center
 			@media (max-width: 40rem)
 				height: initial
-		.how-it-works-features
+		.list-style-1
 			margin-top: 36px
-			list-style: none
-			li
-				margin-bottom: 20px
-				&:before
-					content: "\2022"
-					color: $orange
-					font-weight: bold
-					display: inline-block
-					width: 16px
-					margin-left: -1em
 		&.about--variation
 			.how-it-works-topics
 				.title--how-it-works
@@ -507,3 +497,29 @@ body
 			margin-bottom: 40px
 		.btn
 			margin-top: 58px
+	&--about-benefits
+		.title.margin-bottom
+			margin-bottom: 55px
+			@media (max-width: 40rem)
+				margin-bottom: 40px
+		.card
+			box-shadow: 0 4px 8px rgba(black, 0.16)
+			border-radius: 17px
+			border: none
+			min-height: 415px
+			.card-divider,
+			.card-section
+				padding: 34px 30px 22px
+			.card-divider
+				background-color: $blue
+				font-family: 'amsipro-black'
+				font-size: 32px
+				color: white
+				line-height: 1
+				em
+					font-family: 'amsipro-italic'
+			@media (max-width: 40rem)
+				min-height: initial
+				.card-divider
+					font-size: 24px
+

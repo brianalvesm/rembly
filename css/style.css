@@ -89,6 +89,21 @@
   }
 }
 
+.list-style-1 {
+  list-style: none;
+}
+.list-style-1 li {
+  margin-bottom: 20px;
+}
+.list-style-1 li:before {
+  content: "•";
+  color: #FD8B26;
+  font-weight: bold;
+  display: inline-block;
+  width: 16px;
+  margin-left: -1em;
+}
+
 .header {
   width: 100%;
   height: 100px;
@@ -577,20 +592,8 @@ body a:hover, body a:focus {
     height: initial;
   }
 }
-.sec--how-it-works .how-it-works-features {
+.sec--how-it-works .list-style-1 {
   margin-top: 36px;
-  list-style: none;
-}
-.sec--how-it-works .how-it-works-features li {
-  margin-bottom: 20px;
-}
-.sec--how-it-works .how-it-works-features li:before {
-  content: "•";
-  color: #FD8B26;
-  font-weight: bold;
-  display: inline-block;
-  width: 16px;
-  margin-left: -1em;
 }
 @media (min-width: 40rem) {
   .sec--how-it-works.about--variation .how-it-works-topics .title--how-it-works {
@@ -982,4 +985,40 @@ body a:hover, body a:focus {
 }
 .sec--pillars .btn {
   margin-top: 58px;
+}
+.sec--about-benefits .title.margin-bottom {
+  margin-bottom: 55px;
+}
+@media (max-width: 40rem) {
+  .sec--about-benefits .title.margin-bottom {
+    margin-bottom: 40px;
+  }
+}
+.sec--about-benefits .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 17px;
+  border: none;
+  min-height: 415px;
+}
+.sec--about-benefits .card .card-divider,
+.sec--about-benefits .card .card-section {
+  padding: 34px 30px 22px;
+}
+.sec--about-benefits .card .card-divider {
+  background-color: #2121A5;
+  font-family: "amsipro-black";
+  font-size: 32px;
+  color: white;
+  line-height: 1;
+}
+.sec--about-benefits .card .card-divider em {
+  font-family: "amsipro-italic";
+}
+@media (max-width: 40rem) {
+  .sec--about-benefits .card {
+    min-height: initial;
+  }
+  .sec--about-benefits .card .card-divider {
+    font-size: 24px;
+  }
 }

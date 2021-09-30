@@ -39,6 +39,18 @@ p.paragraph
 	@media (max-width: 40rem)
 		font-size: 12px
 
+.list-style-1
+	list-style: none
+	li
+		margin-bottom: 20px
+		&:before
+			content: "\2022"
+			color: $orange
+			font-weight: bold
+			display: inline-block
+			width: 16px
+			margin-left: -1em
+
 // Header
 .header
 	width: 100%
