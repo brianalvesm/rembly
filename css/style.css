@@ -954,3 +954,32 @@ body a:hover, body a:focus {
 .sec--about-hero .title.highlight {
   font-size: 24px;
 }
+.sec--pillars .card {
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  flex-direction: row;
+  border-radius: 17px;
+  border: none;
+  gap: 26px;
+}
+.sec--pillars .card img {
+  width: 252px;
+}
+@media (max-width: 40rem) {
+  .sec--pillars .card {
+    padding: 22px 46px 22px 26px;
+  }
+  .sec--pillars .card img {
+    display: none;
+  }
+}
+.sec--pillars .title {
+  font-family: "amsipro-black";
+  font-size: 24px;
+}
+.sec--pillars .margin-bottom {
+  margin-bottom: 40px;
+}
+.sec--pillars .btn {
+  margin-top: 58px;
+}
