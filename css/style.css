@@ -225,21 +225,23 @@
     left: 23px;
   }
 }
-.header--style-b {
-  background-color: white;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
-}
-.header--style-b nav a {
-  color: #2C2C2C;
-}
-.header--style-b nav a:hover {
-  color: #FD8B26;
-}
-.header--style-b nav a.btn {
-  color: white;
-}
-.header--style-b nav a.btn:hover {
-  color: white;
+@media (min-width: 40rem) {
+  .header--style-b {
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
+  }
+  .header--style-b nav a {
+    color: #2C2C2C;
+  }
+  .header--style-b nav a:hover {
+    color: #FD8B26;
+  }
+  .header--style-b nav a.btn {
+    color: white;
+  }
+  .header--style-b nav a.btn:hover {
+    color: white;
+  }
 }
 
 footer {
@@ -496,6 +498,7 @@ body a:hover, body a:focus {
     margin: 15px auto;
     flex-direction: row;
     width: 100%;
+    align-items: flex-start;
   }
   .sec--how-it-works .how-it-works-topics img {
     display: none;

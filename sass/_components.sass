@@ -138,16 +138,17 @@ p.paragraph
 				position: absolute
 				left: 23px
 	&--style-b
-		background-color: white
-		box-shadow: 0 3px 20px rgba(black, 0.08)
-		nav a
-			color: $dark
-			&:hover
-				color: $orange
-			&.btn
-				color: white 
+		@media (min-width: 40rem)
+			background-color: white
+			box-shadow: 0 3px 20px rgba(black, 0.08)
+			nav a
+				color: $dark
 				&:hover
-					color: white
+					color: $orange
+				&.btn
+					color: white 
+					&:hover
+						color: white
 
 // Footer
 footer
