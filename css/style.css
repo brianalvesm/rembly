@@ -117,7 +117,7 @@
   -o-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
 }
-.header .logo-rembly.active {
+.header .logo-remby.active {
   display: none;
 }
 .header nav a {
@@ -157,10 +157,10 @@
   .header.active nav a.btn {
     color: white;
   }
-  .header.active .logo-rembly.not-active {
+  .header.active .logo-remby.not-active {
     display: none;
   }
-  .header.active .logo-rembly.active {
+  .header.active .logo-remby.active {
     display: block;
   }
 }
@@ -186,7 +186,7 @@
   .header .btn--secondary {
     margin-top: 10px;
   }
-  .header .logo-rembly {
+  .header .logo-remby {
     width: 114px;
   }
   .header .mobile-wrap {
@@ -640,7 +640,7 @@ body a:hover, body a:focus {
   color: #B7B7B7;
 }
 .sec--why-purchase .stats-wrapper {
-  padding: 40px 0;
+  padding-bottom: 20px;
 }
 .sec--why-purchase .stats-wrapper .percentage {
   font-family: "amsipro-black";
@@ -659,26 +659,23 @@ body a:hover, body a:focus {
   font-size: calc(110px - 50%);
   color: #FD8B26;
 }
-.sec--why-purchase .stats-wrapper .percentage--small {
-  font-size: 70px;
-}
-.sec--why-purchase .stats-wrapper .percentage--small:after {
-  top: 18px;
-  right: -35px;
-  font-size: calc(70px - 50%);
-}
 .sec--why-purchase .stats-wrapper .stats-text {
   font-family: "amsipro-black";
   font-size: 21px;
   color: #2121A5;
 }
-.sec--why-purchase .ampersand {
+.sec--why-purchase .plus {
   font-family: "amsipro-black";
   font-size: 90px;
   color: #B7B7B7;
   line-height: 0.9;
-  padding: 40px 0;
-  margin: 0 32px;
+  padding: 40px 30px 40px 80px;
+}
+.sec--why-purchase .border {
+  border: 1px solid #B7B7B7;
+  border-radius: 12px;
+  padding: 36px;
+  height: 300px;
 }
 @media (max-width: 40rem) {
   .sec--why-purchase .card {
@@ -700,40 +697,36 @@ body a:hover, body a:focus {
     margin: auto;
   }
   .sec--why-purchase .stats-wrapper {
-    padding: 40px 0 20px;
+    padding-bottom: 26px;
   }
   .sec--why-purchase .stats-wrapper .percentage {
-    font-size: 78px;
+    font-size: 59px;
   }
   .sec--why-purchase .stats-wrapper .percentage:after {
     top: 18px;
-    right: -38px;
-    font-size: calc(78px - 50%);
-  }
-  .sec--why-purchase .stats-wrapper .percentage--small {
-    font-size: 40px;
-  }
-  .sec--why-purchase .stats-wrapper .percentage--small:after {
-    top: 8px;
-    right: -20px;
-    font-size: calc(40px - 50%);
+    right: -30px;
+    font-size: calc(59px - 50%);
   }
   .sec--why-purchase .stats-wrapper .stats-text {
     font-size: 14px;
   }
-  .sec--why-purchase .ampersand {
+  .sec--why-purchase .plus {
     font-size: 64px;
-    padding: 40px 0 20px;
+    padding: 0 0 0 25px;
     margin: 0 12px;
   }
   .sec--why-purchase .text-center-mobile {
     font-size: 12px;
   }
-  .sec--why-purchase .border-mobile {
-    border: 1px solid #B7B7B7;
-    border-radius: 12px;
-    padding: 10px;
-    margin: 10px;
+}
+@media (max-width: 60rem) {
+  .sec--why-purchase .border {
+    padding: 32px 25px;
+    height: initial;
+    margin: 10px 0;
+  }
+  .sec--why-purchase .border p {
+    margin-bottom: 0;
   }
 }
 .sec--highlighted {
@@ -916,7 +909,7 @@ body a:hover, body a:focus {
   padding-bottom: 0;
 }
 .sec--apps .grid-container {
-  background-image: url("../images/rembly-apps.png");
+  background-image: url("../images/remby-apps.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   height: 612px;
@@ -932,7 +925,7 @@ body a:hover, body a:focus {
 }
 @media (max-width: 40rem) {
   .sec--apps .grid-container {
-    background-image: url("../images/rembly-apps-mobile.png");
+    background-image: url("../images/remby-apps-mobile.png");
     background-position: right bottom -20px;
     height: 440px;
   }
