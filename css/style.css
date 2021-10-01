@@ -55,7 +55,7 @@
 }
 
 .duration {
-  padding: 12px 40px;
+  padding: 12px 38px;
   border-radius: 25px;
   background-color: #B7B7B7;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
@@ -492,6 +492,8 @@ body a:hover, body a:focus {
   flex-direction: column;
   width: 284px;
   align-items: center;
+  text-align: center;
+  margin: 0 9px;
 }
 @media (max-width: 40rem) {
   .sec--how-it-works .how-it-works-topics {
@@ -607,7 +609,8 @@ body a:hover, body a:focus {
 .sec--how-it-works.about--variation .how-it-works-topics .paragraph {
   font-size: 14px;
   padding: 0 10px;
-  height: 90px;
+  min-height: 156px;
+  line-height: 1.2;
 }
 .sec--how-it-works.about--variation .how-it-works-topics img {
   max-height: 200px;
