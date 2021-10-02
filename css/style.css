@@ -50,6 +50,9 @@
 .btn--secondary {
   background-color: #FD8B26;
 }
+.btn--gray {
+  background-color: #B7B7B7;
+}
 .btn--whatsapp {
   padding: 5px 17px;
   background-color: #4CAF50;
@@ -389,6 +392,31 @@ footer .social-desktop .margin-left {
   top: 12px;
   left: 20px;
   padding: 0 12px 0 8px;
+}
+
+.reveal.custom-reveal {
+  text-align: center;
+  padding: 70px;
+  border-radius: 19px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.reveal.custom-reveal i:before {
+  font-size: 82px;
+  color: #FD8B26;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: white;
+}
+.reveal.custom-reveal .margin {
+  margin: 36px 0;
+}
+.reveal.custom-reveal .close-button span {
+  display: block;
+  border: 1px solid #B7B7B7;
+  border-radius: 12px;
+  width: 23px;
+  height: 23px;
+  font-size: 21px;
+  font-family: "amsipro-regular";
 }
 
 .flex {
@@ -1095,8 +1123,8 @@ body a:hover, body a:focus {
 .sec--contato {
   padding: 200px 0;
 }
-.sec--contato .margin-bottom {
-  margin-bottom: 36px;
+.sec--contato .margin {
+  margin: 36px 0;
 }
 @media (max-width: 40rem) {
   .sec--contato {

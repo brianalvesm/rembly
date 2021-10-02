@@ -75,13 +75,13 @@
                 <input type="text" name="empresa" placeholder="Nome da empresa">
                 <label>Mensagem</label>
                 <textarea name="mensagem" placeholder="Deixe aqui sua mensagem"></textarea>
-                <div class="flex align-right">
-                  <button class="btn btn--primary" value="Enviar">Enviar</button>
-                </div>
               </form>
+              <div class="flex align-right">
+                <button class="btn btn--primary" value="Enviar" data-open="msgSucesso">Enviar</button>
+              </div>
             </div>
             <div class="cell large-6 large-offset-1">
-              <div class="hide-for-small-only flex justify-between margin-bottom">
+              <div class="hide-for-small-only flex justify-between margin">
                 <div>
                   <span>Entre em contato por e-mail</span>
                   <a href="mailto:contato@remby.digital" class="highlight">contato@remby.digital</a>
@@ -96,6 +96,14 @@
           </div>
         </div>
       </section>
+      <div class="reveal custom-reveal" id="msgSucesso" data-reveal>
+        <i class="fas fa-check-circle"></i>
+        <p class="margin">Mensagem enviada com sucesso!</p>
+        <a class="btn btn--gray" data-close aria-label="Close modal">Fechar</a>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     </main>
     <footer>
       <div class="grid-container">
