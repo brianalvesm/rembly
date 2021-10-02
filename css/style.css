@@ -50,6 +50,12 @@
 .btn--secondary {
   background-color: #FD8B26;
 }
+.btn--whatsapp {
+  padding: 5px 17px;
+  background-color: #4CAF50;
+  font-family: "amsipro-regular";
+  font-size: 12px;
+}
 .btn:hover {
   color: white;
 }
@@ -363,6 +369,26 @@ footer .social-desktop .margin-left {
     color: white;
     font-size: 20px;
   }
+}
+
+.form textarea,
+.form input[type] {
+  height: 52px;
+  border-radius: 25px;
+  border: 1px solid #B7B7B7;
+  padding: 14px 28px;
+}
+.form textarea {
+  height: 155px;
+}
+.form label {
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: white;
+  position: relative;
+  top: 12px;
+  left: 20px;
+  padding: 0 12px 0 8px;
 }
 
 .flex {
@@ -1064,5 +1090,20 @@ body a:hover, body a:focus {
   }
   .sec--about-benefits .card .card-divider {
     font-size: 24px;
+  }
+}
+.sec--contato {
+  padding: 200px 0;
+}
+.sec--contato .margin-bottom {
+  margin-bottom: 36px;
+}
+@media (max-width: 40rem) {
+  .sec--contato {
+    padding: 100px 0 0;
+  }
+  .sec--contato img {
+    position: relative;
+    top: 10px;
   }
 }
