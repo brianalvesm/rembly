@@ -441,6 +441,15 @@ footer .social-desktop .margin-left {
 .lgpd-warning .flex {
   gap: 180px;
 }
+@media (max-width: 40rem) {
+  .lgpd-warning {
+    font-size: 12px;
+  }
+  .lgpd-warning .flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
 .flex {
   display: flex;
