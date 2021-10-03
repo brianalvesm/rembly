@@ -529,6 +529,7 @@ body a:hover, body a:focus {
   background-repeat: repeat;
   background-color: #2121A5;
   color: white;
+  height: 768px;
 }
 .sec--hero .heading {
   font-family: "amsipro-black";
@@ -544,15 +545,6 @@ body a:hover, body a:focus {
   font-size: 21px;
   max-width: 453px;
   margin: 45px 0 60px;
-}
-.sec--hero .hero-img {
-  position: relative;
-  bottom: 0;
-}
-@media (min-width: 40rem) {
-  .sec--hero {
-    height: 768px;
-  }
 }
 @media (max-width: 40rem) {
   .sec--hero {
