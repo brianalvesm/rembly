@@ -12,3 +12,7 @@ $(window).on("scroll", function() {
   	$(".header").removeClass("active");
   }
 });
+
+$('.lgpd-warning .btn').click( function() {
+  $('.lgpd-warning').hide();
+});
