@@ -7,6 +7,7 @@
 	color: white
 	text-transform: uppercase
 	border-radius: 22px
+	cursor: pointer
 	&--primary
 		background-color: $green
 	&--secondary
@@ -18,7 +19,10 @@
 		background-color: #4CAF50
 		font-family: 'amsipro-regular'
 		font-size: 12px
-	&:hover
+	&.padding-lg
+		padding: 10px 60px 11px
+	&:hover,
+	&:focus
 		color: white
 
 .duration
@@ -263,15 +267,18 @@ footer
 		padding: 0 12px 0 8px
 
 .reveal.custom-reveal
-	text-align: center
-	padding: 70px
 	border-radius: 19px
 	box-shadow: $shadow
+	padding: 56px
 	i:before
 		font-size: 82px
 		color: $orange
 		text-shadow: $shadow
 		background-color: white
+	.title
+		line-height: 1
+	.btn
+		margin: 9px
 	.margin
 		margin: 36px 0
 	.close-button span
@@ -282,3 +289,5 @@ footer
 		height: 23px
 		font-size: 21px
 		font-family: 'amsipro-regular'
+	&.success-msg
+		text-align: center

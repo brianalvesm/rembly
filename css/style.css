@@ -43,6 +43,7 @@
   color: white;
   text-transform: uppercase;
   border-radius: 22px;
+  cursor: pointer;
 }
 .btn--primary {
   background-color: #4BC789;
@@ -59,7 +60,10 @@
   font-family: "amsipro-regular";
   font-size: 12px;
 }
-.btn:hover {
+.btn.padding-lg {
+  padding: 10px 60px 11px;
+}
+.btn:hover, .btn:focus {
   color: white;
 }
 
@@ -395,16 +399,21 @@ footer .social-desktop .margin-left {
 }
 
 .reveal.custom-reveal {
-  text-align: center;
-  padding: 70px;
   border-radius: 19px;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 56px;
 }
 .reveal.custom-reveal i:before {
   font-size: 82px;
   color: #FD8B26;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
   background-color: white;
+}
+.reveal.custom-reveal .title {
+  line-height: 1;
+}
+.reveal.custom-reveal .btn {
+  margin: 9px;
 }
 .reveal.custom-reveal .margin {
   margin: 36px 0;
@@ -417,6 +426,9 @@ footer .social-desktop .margin-left {
   height: 23px;
   font-size: 21px;
   font-family: "amsipro-regular";
+}
+.reveal.custom-reveal.success-msg {
+  text-align: center;
 }
 
 .flex {
