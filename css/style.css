@@ -928,8 +928,9 @@ body a:hover, body a:focus {
 @media (min-width: 40rem) {
   .sec--differentials .differentials-wrap .ornament:before {
     content: "";
-    background-image: url("../images/ornament.png");
+    background-image: url("../images/ornament.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     display: block;
     width: 55px;
     height: 97px;
