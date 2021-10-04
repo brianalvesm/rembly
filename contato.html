@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4c414722f1.js" crossorigin="anonymous"></script>
+    <!-- Insert this within your head tag and after foundation.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
   </head>
   <body>
     <header class="header header--style-b">
@@ -47,7 +49,7 @@
                   <a href="/" class="show-for-small-only">Início</a>
                   <a href="sobre.html">Como funciona o serviço?</a>
                   <a href="contato.html">Fale com a Remby</a>
-                  <a href=" " target="_blank" class="btn btn--primary">Quero começar!</a>
+                  <a data-open="openForm" target="_blank" target="_blank" class="btn btn--primary">Quero começar!</a>
                   <a href=" " target="_blank" class="btn btn--secondary">Área do cliente</a>
                 </nav>
               </div>
@@ -96,7 +98,29 @@
           </div>
         </div>
       </section>
-      <div class="reveal custom-reveal success-msg" id="msgSucesso" data-reveal>
+      <div class="reveal custom-reveal" id="openForm" data-reveal data-animation-in="fade-in" data-animation-in="fade-out">
+        <h1 class="title">A Remby tem <span class="highlight">o que sua empresa precisa</span></h1>
+        <form class="form">
+          <label>Seu nome</label>
+          <input type="text" name="nome" placeholder="Digite seu nome completo">
+          <label>Seu telefone ou celular</label>
+          <input type="tel" name="tel" placeholder="(00) 0 0000-0000">
+          <label>Seu e-mail</label>
+          <input type="email" name="email" placeholder="email@email.com.br">
+          <label>Sua empresa</label>
+          <input type="text" name="empresa" placeholder="Nome da empresa">
+          <label>Mensagem</label>
+          <textarea name="mensagem" placeholder="Deixe aqui sua mensagem"></textarea>
+        </form>
+        <div class="flex align-right">
+          <button class="btn btn--gray padding-lg" data-close aria-label="Close modal">Cancelar</button>
+          <button class="btn btn--primary padding-lg" value="Enviar" data-open="msgSucesso">Enviar</button>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="reveal custom-reveal success-msg" id="msgSucesso" data-reveal data-animation-in="fade-in" data-animation-in="fade-out">
         <i class="fas fa-check-circle"></i>
         <p class="margin">Mensagem enviada com sucesso!</p>
         <a class="btn btn--gray padding-lg" data-close aria-label="Close modal">Fechar</a>

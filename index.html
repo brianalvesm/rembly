@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4c414722f1.js" crossorigin="anonymous"></script>
+    <!-- Insert this within your head tag and after foundation.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
   </head>
   <body>
     <header class="header header--style-a">
@@ -341,7 +343,7 @@
           </div>
         </div>
       </section>
-      <div class="reveal custom-reveal" id="openForm" data-reveal>
+      <div class="reveal custom-reveal" id="openForm" data-reveal data-animation-in="fade-in" data-animation-in="fade-out">
         <h1 class="title">A Remby tem <span class="highlight">o que sua empresa precisa</span></h1>
         <form class="form">
           <label>Seu nome</label>
@@ -363,7 +365,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="reveal custom-reveal success-msg" id="msgSucesso" data-reveal>
+      <div class="reveal custom-reveal success-msg" id="msgSucesso" data-reveal data-animation-in="fade-in" data-animation-in="fade-out">
         <i class="fas fa-check-circle"></i>
         <p class="margin">Mensagem enviada com sucesso!</p>
         <a class="btn btn--gray padding-lg" data-close aria-label="Close modal">Fechar</a>
