@@ -517,7 +517,7 @@ footer .social-desktop .margin-left {
   }
 }
 body {
-  font-family: "amsipro-regular", sans-serif;
+  font-family: "amsipro-regular", sans-serif !important;
   color: #2C2C2C;
 }
 body .grid-container {
