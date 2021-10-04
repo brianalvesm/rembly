@@ -1037,7 +1037,7 @@ body a:hover, body a:focus {
   padding-bottom: 0;
 }
 .sec--apps .grid-container {
-  background-image: url("../images/remby-apps.png");
+  background-image: url("../images/remby-apps.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
   height: 612px;
@@ -1053,7 +1053,7 @@ body a:hover, body a:focus {
 }
 @media (max-width: 40rem) {
   .sec--apps .grid-container {
-    background-image: url("../images/remby-apps-mobile.png");
+    background-image: url("../images/remby-apps-mobile.svg");
     background-position: right bottom -20px;
     height: 440px;
   }
