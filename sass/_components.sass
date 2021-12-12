@@ -49,14 +49,19 @@
 	font-family: 'amsipro-black'
 	font-size: 42px
 	color: $blue
-	@media (max-width: 40rem)
-		font-size: 24px
 	&--md
 		font-size: 36px
 	&--sm
 		font-size: 24px
 	&--orange
 		color: $orange
+	@media (max-width: 64rem)
+		&--md
+			font-size: 30px
+		&--sm
+			font-size: 20px
+	@media (max-width: 40rem)
+		font-size: 24px
 
 p.paragraph
 	@media (max-width: 40rem)
@@ -324,11 +329,18 @@ footer
 
 	.post-wrap
 		gap: 30px
+		border-bottom: 1px solid #ccc
+		padding: 25px 0
 		img,
 		figure
 			max-width: 365px
-		.post-description
-			margin-top: 22px
+			@media (min-width: 40rem) and (max-width: 64rem)
+				width: 265px
+		.author-date-category
+			display: block
+			margin: 22px 0
+			font-style: italic
+			color: #666
 		@media (max-width: 40rem)
 			flex-direction: column
 			img,
@@ -339,6 +351,38 @@ footer
 		flex-direction: column
 		a
 			color: $orange
+			margin-left: 10px
 
 	aside .title:nth-child(n+2)
 		margin-top: 22px
+
+.owl-theme.owl-blog
+	position: relative
+	.owl-nav
+		position: absolute
+		width: 100%
+		top: 50%
+		margin-top: -33px
+		[class*=owl-]
+			position: absolute
+			margin: 0
+			width: 66px
+			height: 66px
+			display: flex
+			align-items: center
+			justify-content: center
+			&:hover
+				background-color: #696D70
+			span
+				background-color: #4A85B0
+				border-radius: 12px
+				color: white
+				line-height: 0.6
+				display: block
+				width: 24px
+				height: 24px
+				font-size: 32px
+		.owl-prev
+			left: 0
+		.owl-next
+			right: 0

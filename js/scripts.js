@@ -16,3 +16,18 @@ $(window).on("scroll", function() {
 $('.lgpd-warning .btn').click( function() {
   $('.lgpd-warning').hide();
 });
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
+$('.owl-carousel').owlCarousel({
+  items:1,
+  loop:true,
+  margin:10,
+  nav:true,
+  dots:false,
+  autoplay:true,
+  autoplayTimeout:5000,
+  autoplayHoverPause:true
+});

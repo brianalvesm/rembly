@@ -104,11 +104,6 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
   font-size: 42px;
   color: #2121A5;
 }
-@media (max-width: 40rem) {
-  .title {
-    font-size: 24px;
-  }
-}
 .title--md {
   font-size: 36px;
 }
@@ -117,6 +112,19 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 }
 .title--orange {
   color: #FD8B26;
+}
+@media (max-width: 64rem) {
+  .title--md {
+    font-size: 30px;
+  }
+  .title--sm {
+    font-size: 20px;
+  }
+}
+@media (max-width: 40rem) {
+  .title {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 40rem) {
@@ -476,13 +484,24 @@ footer .social-desktop .margin-left {
 }
 .blog .post-wrap {
   gap: 30px;
+  border-bottom: 1px solid #ccc;
+  padding: 25px 0;
 }
 .blog .post-wrap img,
 .blog .post-wrap figure {
   max-width: 365px;
 }
-.blog .post-wrap .post-description {
-  margin-top: 22px;
+@media (min-width: 40rem) and (max-width: 64rem) {
+  .blog .post-wrap img,
+.blog .post-wrap figure {
+    width: 265px;
+  }
+}
+.blog .post-wrap .author-date-category {
+  display: block;
+  margin: 22px 0;
+  font-style: italic;
+  color: #666;
 }
 @media (max-width: 40rem) {
   .blog .post-wrap {
@@ -498,9 +517,48 @@ footer .social-desktop .margin-left {
 }
 .blog .categories-wrap a {
   color: #FD8B26;
+  margin-left: 10px;
 }
 .blog aside .title:nth-child(n+2) {
   margin-top: 22px;
+}
+
+.owl-theme.owl-blog {
+  position: relative;
+}
+.owl-theme.owl-blog .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -33px;
+}
+.owl-theme.owl-blog .owl-nav [class*=owl-] {
+  position: absolute;
+  margin: 0;
+  width: 66px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owl-theme.owl-blog .owl-nav [class*=owl-]:hover {
+  background-color: #696D70;
+}
+.owl-theme.owl-blog .owl-nav [class*=owl-] span {
+  background-color: #4A85B0;
+  border-radius: 12px;
+  color: white;
+  line-height: 0.6;
+  display: block;
+  width: 24px;
+  height: 24px;
+  font-size: 32px;
+}
+.owl-theme.owl-blog .owl-nav .owl-prev {
+  left: 0;
+}
+.owl-theme.owl-blog .owl-nav .owl-next {
+  right: 0;
 }
 
 .flex {
