@@ -556,3 +556,18 @@ body
 			img
 				position: relative
 				top: 10px
+	// Blog
+	&--featured-posts
+		padding: 200px 0
+		.other-featured-posts
+			gap: 22px
+			height: 100%
+			justify-content: space-between
+			flex-wrap: wrap
+			@media (max-width: 64rem)
+				margin-top: 22px
+			@media (min-width: 40rem) and (max-width: 64rem)
+				flex-wrap: nowrap
+		img,
+		figure
+			width: 100%

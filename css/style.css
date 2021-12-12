@@ -1176,3 +1176,26 @@ body a:hover, body a:focus {
     top: 10px;
   }
 }
+.sec--featured-posts {
+  padding: 200px 0;
+}
+.sec--featured-posts .other-featured-posts {
+  gap: 22px;
+  height: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 64rem) {
+  .sec--featured-posts .other-featured-posts {
+    margin-top: 22px;
+  }
+}
+@media (min-width: 40rem) and (max-width: 64rem) {
+  .sec--featured-posts .other-featured-posts {
+    flex-wrap: nowrap;
+  }
+}
+.sec--featured-posts img,
+.sec--featured-posts figure {
+  width: 100%;
+}
