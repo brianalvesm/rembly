@@ -558,7 +558,7 @@ body
 				top: 10px
 	// Blog
 	&--featured-posts
-		padding: 200px 0
+		padding: 200px 0 50px
 		.other-featured-posts
 			gap: 22px
 			height: 100%
@@ -568,6 +568,5 @@ body
 				margin-top: 22px
 			@media (min-width: 40rem) and (max-width: 64rem)
 				flex-wrap: nowrap
-		img,
-		figure
-			width: 100%
+		@media (max-width: 40rem)
+			padding: 100px 0 0

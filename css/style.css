@@ -109,6 +109,15 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
     font-size: 24px;
   }
 }
+.title--md {
+  font-size: 36px;
+}
+.title--sm {
+  font-size: 24px;
+}
+.title--orange {
+  color: #FD8B26;
+}
 
 @media (max-width: 40rem) {
   p.paragraph {
@@ -458,6 +467,40 @@ footer .social-desktop .margin-left {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+.blog img,
+.blog figure {
+  width: 100%;
+  border-radius: 10px;
+}
+.blog .post-wrap {
+  gap: 30px;
+}
+.blog .post-wrap img,
+.blog .post-wrap figure {
+  max-width: 365px;
+}
+.blog .post-wrap .post-description {
+  margin-top: 22px;
+}
+@media (max-width: 40rem) {
+  .blog .post-wrap {
+    flex-direction: column;
+  }
+  .blog .post-wrap img,
+.blog .post-wrap figure {
+    max-width: initial;
+  }
+}
+.blog .categories-wrap {
+  flex-direction: column;
+}
+.blog .categories-wrap a {
+  color: #FD8B26;
+}
+.blog aside .title:nth-child(n+2) {
+  margin-top: 22px;
 }
 
 .flex {
@@ -1177,7 +1220,7 @@ body a:hover, body a:focus {
   }
 }
 .sec--featured-posts {
-  padding: 200px 0;
+  padding: 200px 0 50px;
 }
 .sec--featured-posts .other-featured-posts {
   gap: 22px;
@@ -1195,7 +1238,8 @@ body a:hover, body a:focus {
     flex-wrap: nowrap;
   }
 }
-.sec--featured-posts img,
-.sec--featured-posts figure {
-  width: 100%;
+@media (max-width: 40rem) {
+  .sec--featured-posts {
+    padding: 100px 0 0;
+  }
 }

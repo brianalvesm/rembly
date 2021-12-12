@@ -51,6 +51,12 @@
 	color: $blue
 	@media (max-width: 40rem)
 		font-size: 24px
+	&--md
+		font-size: 36px
+	&--sm
+		font-size: 24px
+	&--orange
+		color: $orange
 
 p.paragraph
 	@media (max-width: 40rem)
@@ -308,3 +314,31 @@ footer
 		.flex
 			flex-direction: column
 			gap: 10px
+
+// Blog
+.blog
+	img,
+	figure
+		width: 100%
+		border-radius: 10px
+
+	.post-wrap
+		gap: 30px
+		img,
+		figure
+			max-width: 365px
+		.post-description
+			margin-top: 22px
+		@media (max-width: 40rem)
+			flex-direction: column
+			img,
+			figure
+				max-width: initial
+
+	.categories-wrap
+		flex-direction: column
+		a
+			color: $orange
+
+	aside .title:nth-child(n+2)
+		margin-top: 22px
