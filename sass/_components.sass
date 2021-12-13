@@ -326,6 +326,7 @@ footer
 	figure
 		width: 100%
 		border-radius: 10px
+		height: fit-content
 
 	.post-wrap
 		gap: 30px
@@ -338,7 +339,7 @@ footer
 				width: 265px
 		.author-date-category
 			display: block
-			margin: 22px 0
+			margin: 10px 0 25px
 			font-style: italic
 			color: #666
 		@media (max-width: 40rem)
@@ -352,6 +353,16 @@ footer
 		a
 			color: $orange
 			margin: 10px 0 0 10px
+	
+	.archives-wrap
+		flex-direction: column
+		a
+			color: #666
+			margin: 10px 0 0 10px
+		.author-date-category
+			font-size: 13px
+			color: #aaa
+			margin: 0 0 10px 10px
 
 	aside .title:nth-child(n+2)
 		margin-top: 22px
@@ -403,3 +414,7 @@ footer
 			left: 0
 		.owl-next
 			right: 0
+
+aside
+	@media (max-width: 40rem)
+		margin-top: 40px
