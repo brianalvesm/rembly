@@ -491,6 +491,7 @@ footer .social-desktop .margin-left {
 .blog .post-wrap img,
 .blog .post-wrap figure {
   max-width: 365px;
+  min-width: 265px;
 }
 @media (min-width: 40rem) and (max-width: 64rem) {
   .blog .post-wrap img,
@@ -503,6 +504,9 @@ footer .social-desktop .margin-left {
   margin: 10px 0 25px;
   font-style: italic;
   color: #666;
+}
+.blog .post-wrap .post-details {
+  max-width: 550px;
 }
 @media (max-width: 40rem) {
   .blog .post-wrap {
