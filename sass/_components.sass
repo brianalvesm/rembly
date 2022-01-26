@@ -113,7 +113,7 @@ p.paragraph
 		@include transition(400ms)
 		.close-icon
 			display: none
-	@media (min-width: 40rem)
+	@media (min-width: 64rem)
 		&.active
 			@include transition(400ms)
 			background-color: rgba(white, 0.9)
@@ -127,7 +127,7 @@ p.paragraph
 				display: none
 			.logo-remby.active
 				display: block
-	@media (max-width: 40rem)
+	@media (max-width: 64rem)
 		background-color: $blue
 		height: 64px
 		padding-top: initial
@@ -182,7 +182,7 @@ p.paragraph
 				position: absolute
 				left: 23px
 	&--style-b
-		@media (min-width: 40rem)
+		@media (min-width: 64rem)
 			background-color: white
 			box-shadow: 0 3px 20px rgba(black, 0.08)
 			nav a
