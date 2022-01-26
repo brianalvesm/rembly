@@ -200,7 +200,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
 .header .mobile-wrap .close-icon {
   display: none;
 }
-@media (min-width: 40rem) {
+@media (min-width: 64rem) {
   .header.active {
     -webkit-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
     -moz-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -225,7 +225,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
     display: block;
   }
 }
-@media (max-width: 40rem) {
+@media (max-width: 64rem) {
   .header {
     background-color: #2121A5;
     height: 64px;
@@ -298,7 +298,7 @@ body .h1, body .h2, body .h3, body .h4, body .h5, body .h6, body h1, body h2, bo
     left: 23px;
   }
 }
-@media (min-width: 40rem) {
+@media (min-width: 64rem) {
   .header--style-b {
     background-color: white;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.08);
